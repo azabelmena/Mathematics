@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1615209002 "Topology.tex" "Topology.pdf" "Topology" 1615209002
+["pdflatex"] 1615210318 "Topology.tex" "Topology.pdf" "Topology" 1615210318
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/eletrico/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk" 1610292277 17148 edef7afd0a29be46da2c41eb397adf3b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -243,7 +243,7 @@
   "Chapters/Chapter2/Section4/section4.tex" 1615208086 16902 5182469b5dca38cc57c82fdeb0e4a260 ""
   "Chapters/Chapter2/chapter2.tex" 1611518447 661 341d4d91b7033ec0bd1429b21cac8438 ""
   "Chapters/Chapter3/Section1/section1.tex" 1614902937 7814 81e6eb7d68a9ab10de9bedfd515d3d5d ""
-  "Chapters/Chapter3/Section2/section2.tex" 1614903052 240 4ca985d861ae9961efd83aeb46e83b47 ""
+  "Chapters/Chapter3/Section2/section2.tex" 1615210303 782 6324f3a3f56b261f9e65ae2226fe4161 ""
   "Chapters/Chapter3/chapter3.tex" 1614903076 517 2ce9d14fd24772062dfa8b562c707faf ""
   "Figures/Chapter1/basesOfCircularRectangularRegions.png" 1606600743 825314 761ca474224a9dffd78304f018349b25 ""
   "Figures/Chapter1/continuousFunctions.png" 1606600743 45834 21100e69ac71c48c6913c427622a5127 ""
@@ -262,9 +262,9 @@
   "Figures/Chapter2/squareTorus.eps" 1612631991 382587 42f624665e252db773855ced3f2e2130 ""
   "Library/Fonts/BlackboardBold.tex" 1606600743 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1606600743 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "Topology.aux" 1615209002 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "Topology.out" 0 -1 0 "pdflatex"
-  "Topology.tex" 1615208998 2325 3deeb204d4427014fdb93c65d9241dfd ""
+  "Topology.aux" 1615210311 10771 994b02f57dfdbd9ee5ce21622e74274f "pdflatex"
+  "Topology.out" 1615210311 1111 4ba9dea9db986a593381044b9718d106 "pdflatex"
+  "Topology.tex" 1615209023 2325 3deeb204d4427014fdb93c65d9241dfd ""
   (generated)
   "Topology.out"
   "Topology.aux"
