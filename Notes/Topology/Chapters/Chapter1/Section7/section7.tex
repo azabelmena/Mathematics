@@ -62,7 +62,7 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
         \begin{enumerate}[label=(\arabic*)]
             \item $f$ is continuous.
 
-            \item For every $A \subseteq X$,  $f(\bar{A}) \subseteq \bar{f(A)}$.
+            \item For every $A \subseteq X$,  $f(\cl{A}) \subseteq \cl{f(A)}$.
 
             \item For every closed set $B \subseteq Y$,  $f^{-1}(B)$ is closed in $X$.
 
@@ -73,10 +73,10 @@ $f^{-1}(B)=\bigcap_{i=1}^{n}{f^{-1}(S_i)}$, thus  $S_i$ is also open in  $X$ for
 \begin{proof}
     Let $f$ be continuous and let  $A \subseteq X$. Consider the neighborhood  $V$ of  $f(x)$, then
     $f^{-1}(V)$ is open in $X$, and intersects  $A$ at a point  $y$. Then  $V \cap f(A)=f(y)$, thus 
-    $f(x) \in \bar{f(A)}$.
+    $f(x) \in \cl{f(A)}$.
 
     Now let $B$ be closed in  $Y$, and let  $A=f^{-1}(B)$. THen we have that $f(A)=f(f^{-1(B)})
-    \subseteq B$, thus $x \in \bar{A}$.
+    \subseteq B$, thus $x \in \cl{A}$.
 
     Now let $V$ be open in $Y$, so that  $B=\com{Y}{V}$ is closed in $Y$, and
     $f^{-1}(B)=\com{f^{-1}(Y)}{f^{-1}(V)}=\com{X}{f^-1}(V)$ which is closed in $X$, hence

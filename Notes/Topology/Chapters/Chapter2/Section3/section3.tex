@@ -80,12 +80,12 @@ contiuity carry over.
 
 \begin{lemma}[The Sequence Lemma]\label{2.3.5}
     Let $X$ be a topological space and let  $A \subseteq X$. If there is a sequence of points og
-    $A$ converging to $x \in X$, then $x \in \bar{A}$. The converse holds if $X$ is metrizable.
+    $A$ converging to $x \in X$, then $x \in \cl{A}$. The converse holds if $X$ is metrizable.
 \end{lemma}
 \begin{proof}
     Suppose for some sequence $\{x_n\} \subseteq A$ that $x_n \rightarrow x$. By theorem \ref
-    {1.6.6}, we have every neighborhood of $x$ contains points of  $A$,  hence $x \in \bar{A}$.
-    Conversely, suppose that $X$ is metrizable with metric  $d$, and let  $x \in \bar{A}$. For $n
+    {1.6.6}, we have every neighborhood of $x$ contains points of  $A$,  hence $x \in \cl{A}$.
+    Conversely, suppose that $X$ is metrizable with metric  $d$, and let  $x \in \cl{A}$. For $n
     \in \Z^+$, take  $B_d(x,\frac{1}{n})$ and take $\{x_n\}=B_d(x,\frac{1}{n}) \cap A$. Then $x_n
     \rightarrow n$, for: any open set  $U$ of  $x$ contains an  $\epsilon$-ball about  $x$,
     $B_d(x,\epsilon)$, so choose $N$ large enough so that  $ \frac{1}{N}<\epsilon$, hence $U$
@@ -103,10 +103,10 @@ contiuity carry over.
     f^{-1}(V)$ whenever $n \geq N$, thus  $f(x_n) \in V$ whenever $n \geq N$.
 
     Conversely suppose that for every  $\{x_n\}$ converging to $x$, that  $\{f(x_n)\}$ converges to
-    $f(x)$, and let $A \subseteq X$. if  $x \in \bar{A}$, by the sequence lemma, there is a sequence
+    $f(x)$, and let $A \subseteq X$. if  $x \in \cl{A}$, by the sequence lemma, there is a sequence
     $\{x_n\} \subseteq A$ converging to $X$. Now since  $f(x_n) \rightarrow f(x)$. and $f(x_n) \in
-    f(A)$, by the sequence lemma again, $f(x) \in \bar{f(A)}$.  Thus $f(\bar{A}) \subseteq
-    \bar{f(A)}$ and we are done.
+    f(A)$, by the sequence lemma again, $f(x) \in \cl{f(A)}$.  Thus $f(\cl{A}) \subseteq
+    \cl{f(A)}$ and we are done.
 \end{proof}
 
 We now consder methods for constructing continous functions on metric spaces.
@@ -124,7 +124,7 @@ We now consder methods for constructing continous functions on metric spaces.
 \begin{proof}
     The map $h:X \rightarrow \R \times \R$ defined by $h(x)=f(x) \times g(x)$ is continuous. Then
     notice that $f+g(x)=+(f(x),g(x))=+\circ h(x)$, so by the above lemma, we get that $f+g$ is
-    contincontinuous. We also have that  $f-g$ iss continuous for  $f-g(x)=+(f(x),-g(x))$. The same
+    contincontinuous. We also have that  $f-g$ is continuous for  $f-g(x)=+(f(x),-g(x))$. The same
     argument holds for $fg$ and  $ \frac{f}{g}$.
 \end{proof}
 
@@ -153,8 +153,8 @@ We now consder methods for constructing continous functions on metric spaces.
 \begin{example}
     \begin{enumerate}[label=(\arabic*)]
         \item $\R^{\omega}$ is not metrizable in the box topology. Let $A=\{(x_1,x_2,\dots) \in
-            \R^{\omega}:x_i>0\}$ and consider $0=(0,0,\dots) \in \R^{\omega}$. $-0 \in \bar{A}$ if
-            for any basis elemebt $B=(a_1,b_1) \times (a_2,b_2) \times \dots$, $0 \in B$; then  $B
+            \R^{\omega}:x_i>0\}$ and consider $0=(0,0,\dots) \in \R^{\omega}$. $0 \in \cl{A}$ if
+            for any basis element $B=(a_1,b_1) \times (a_2,b_2) \times \dots$, $0 \in B$; then  $B
             \cap A \neq \emptyset$  (take the point $ \frac{1}{2}b \in \R^\omega$). Now let
             $\{a_n\}$ be a sequence of points of $A$ with  $a_n=(x_{1n},x_{2n}, \dots, x_ {in},
             \dots)$, since $x_{in}>0$, construct a basis element $B'=(-x_{11},x_{11}) \times

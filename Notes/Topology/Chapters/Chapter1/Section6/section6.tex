@@ -103,41 +103,41 @@ We now go over the concepts of the closure, and the interior of a set.
     of $A$ is defined to be the union of all open sets in  $A$. The
     \textbf{closure} of $A$ is defined to be the intersection of all closed sets
     containing $A$. We denote the interior and the closure of  $A$ as  $\Int{A}$
-    and  $\bar{A}$ respectively
+    and  $\cl{A}$ respectively
 \end{definition}
 
-We have by the very definitions that $\Int{A} \subseteq A \subseteq \bar{A}$
+We have by the very definitions that $\Int{A} \subseteq A \subseteq \cl{A}$
 
 \begin{lemma}\label{1.6.4}
-    $\Int{A}=A$ only when  $A$ is open, and  $\bar{A}=A$ only when  $A$ is
+    $\Int{A}=A$ only when  $A$ is open, and  $\cl{A}=A$ only when  $A$ is
     closed.
 \end{lemma}
 \begin{proof}
     Now, if $A$ is open, then it is in the union of all open sets of  $A$, hence
-    $A \subseteq \Int{A}$, likewise, if  $A$ is closed, then since $\bar{A}$ is
-    the intersection of all closed sets containing  $A$, we get $\bar{A}
+    $A \subseteq \Int{A}$, likewise, if  $A$ is closed, then since $\cl{A}$ is
+    the intersection of all closed sets containing  $A$, we get $\cl{A}
     \subseteq A$.
 \end{proof}
 \begin{corollary}
-    $A$ is closed and open if and only if  $\Int{A}=\bar{A}$.
+    $A$ is closed and open if and only if  $\Int{A}=\cl{A}$.
 \end{corollary}
 
 \begin{theorem}\label{1.6.5}
-    Let $Y$ be a subspace of  $X$, and let  $A \subseteq Y$, and let $\bar{A}$
-    be the closure of $A$. Then  $\bar{A} \cap Y$ is the closure of  $A$ in
+    Let $Y$ be a subspace of  $X$, and let  $A \subseteq Y$, and let $\cl{A}$
+    be the closure of $A$. Then  $\cl{A} \cap Y$ is the closure of  $A$ in
     $Y$.
 \end{theorem}
 \begin{proof}
-    Let $\hat{A}$ be the closure of  $A$ in  $Y$. Since  $\bar{A}$ is closed in
-    $X$, by theorem \ref{1.6.2},  $\bar{A} \cap Y$ is closed in  $Y$, now we
-    have that $A \subseteq \bar{A} \cap Y$, and since $\hat{A}=\bigcap{U}$, then
-    $\hat{A} \subseteq \bar{A} \cap Y$.
+    Let $\cl{A}$ be the closure of  $A$ in  $Y$. Since  $\cl{A}$ is closed in
+    $X$, by theorem \ref{1.6.2},  $\cl{A} \cap Y$ is closed in  $Y$, now we
+    have that $A \subseteq \cl{A} \cap Y$, and since $\cl{A}=\bigcap{U}$, then
+    $\cl{A} \subseteq \cl{A} \cap Y$.
 
-    Conversely, suppose that $\hat{A}$ is closed in  $Y$, again by theorem
-    \ref{1.6.2}, we have that  $\hat{A}=C \cap Y$, where  $C$ is closed in  $X$,
-    since  $A \subseteq \hat{A}$, then  $A \subseteq C$, and since  $C$ is
-    closed, then  $\bar{A} \subseteq C$, thus  $\bar{A} \cap Y \subseteq
-    \hat{A}$.
+    Conversely, suppose that $\cl{A}$ is closed in  $Y$, again by theorem
+    \ref{1.6.2}, we have that  $\cl{A}=C \cap Y$, where  $C$ is closed in  $X$,
+    since  $A \subseteq \cl{A}$, then  $A \subseteq C$, and since  $C$ is
+    closed, then  $\cl{A} \subseteq C$, thus  $\cl{A} \cap Y \subseteq
+    \cl{A}$.
 \end{proof}
 
 \begin{definition}
@@ -146,19 +146,19 @@ We have by the very definitions that $\Int{A} \subseteq A \subseteq \bar{A}$
 \end{definition}
 
 \begin{theorem}\label{1.6.6}
-    If $A \subseteq X$, with  $X$ a topological space, then  $\bar{A}$ is a
+    If $A \subseteq X$, with  $X$ a topological space, then  $\cl{A}$ is a
     neighborhood of  $x \in X$ if and only if for every neighborhood  $U$ of
     $x$,  $A \cap U \neq \emptyset$.
 \end{theorem}
 \begin{proof}
-    We prove the contrapositve. If $x \notin \bar{A}$, then
-    $U=\com{X}{\bar{A}}$ is an open set containing  $A$, disjoint from
+    We prove the contrapositve. If $x \notin \cl{A}$, then
+    $U=\com{X}{\cl{A}}$ is an open set containing  $A$, disjoint from
     $A$. Conversely, suppose there is a neighborhood $U$ of $x$, with $U$
     disjoint from  $A$, then  $\com{X}{U}$ is closed, and therefore contains the
-    closure of  $A$, thus  $x \notin \bar{A}$
+    closure of  $A$, thus  $x \notin \cl{A}$
 \end{proof}
 \begin{corollary}
-    $\bar{A}$ is a neighborhood of  $x$ if and only if for every basis element
+    $\cl{A}$ is a neighborhood of  $x$ if and only if for every basis element
     $B$ of  $X$, containing  $x$, intersects  $A$.
 \end{corollary}
 \begin{proof}
@@ -173,14 +173,14 @@ We have by the very definitions that $\Int{A} \subseteq A \subseteq \bar{A}$
             every point outside of  $[0,1]$ has a neighborhood disjoint from
             $[0,1]$  (take the neighborhood $(2,3)$ of  $2$).
 
-        \item $\bar{\frac{1}{\Z^+}}=\{0\} \cup \frac{1}{\Z+}$ and $\bar{\{0\} \cup
+        \item $\cl{\frac{1}{\Z^+}}=\{0\} \cup \frac{1}{\Z+}$ and $\cl{\{0\} \cup
             (1,2))}=\{0\} \cup [1,2]$.
 
-        \item $\bar{\Q}=\R$,  $\bar{\Z^+}=\Z^+$,  $\bar{\R^+}=\R^+ \cup \{0\}$.
+        \item $\cl{\Q}=\R$,  $\cl{\Z^+}=\Z^+$,  $\cl{\R^+}=\R^+ \cup \{0\}$.
             This first follows from the density of $\Q$ in  $\R$. Every
-            neighborhood  $n \in \Z^+$ intersects  $\Z^+$, so  $\bar{Z^+}
+            neighborhood  $n \in \Z^+$ intersects  $\Z^+$, so  $\cl{Z^+}
             \subseteq \Z^+$, and we have that the neighborhood  $(0,1)$ of  $0$ 
-            intersects $\R^+$, so  $\bar{\R^+} \subseteq \R^+ \cup \{0\}$.
+            intersects $\R^+$, so  $\cl{\R^+} \subseteq \R^+ \cup \{0\}$.
     \end{enumerate}		
 \end{example} 
 
@@ -188,13 +188,13 @@ We have by the very definitions that $\Int{A} \subseteq A \subseteq \bar{A}$
     If $A \subseteq X$, with  $X$ a topological space, and if  $x \in X$, we say
     that  $x$ is a \textbf{limit point} of  $A$ if every neighborhood of  $x$
     intersects $A$ at some distinct point. That is:  $x \in
-    \bar{\com{X}{\{x\}}}$.
+    \cl{\com{X}{\{x\}}}$.
 \end{definition}
 
 \begin{example}
     \begin{enumerate}[label=(\arabic*)]
         \item Consider $(0,1]$, we have that  $0 \in
-            [0,1]=\bar{(0,1]}=\bar{\com{[0,1]}}{\{0\}}$, so $0$ is a limit 
+            [0,1]=\cl{(0,1]}=\cl{\com{[0,1]}}{\{0\}}$, so $0$ is a limit 
             point of $(0,1]$, the same can be said for any  $x \in (0,1]$.		
 
         \item For $\frac{1}{\Z^+}$, $0$ is once again a limit point. 
@@ -203,30 +203,30 @@ We have by the very definitions that $\Int{A} \subseteq A \subseteq \bar{A}$
             \frac{1}{\Z^+}=\emptyset$ or $\{x\}$, hence,  $0$ is the only limit
             point of  $ \frac{1}{\Z^+}$.
 
-        \item $\bar{\{0\} \cup (1,2)}=\{0\} \cup [1,2]$ has all of its limit
+        \item $\cl{\{0\} \cup (1,2)}=\{0\} \cup [1,2]$ has all of its limit
             points in $[1,2]$. Likewise, every point in  $\R$ is a limit point
             of  $\Q$.  $\Z^+$ has no limit points in  $\R$, and the limit points
-            of  $\R^+$ are all the points of  $\bar{\R^+}$.
+            of  $\R^+$ are all the points of  $\cl{\R^+}$.
     \end{enumerate}
 \end{example} 
 
 \begin{theorem}\label{1.6.7}
     Let $A \subseteq X$,  $X$ a topological space, and let  $A'$ be the set of
-    all limit points in  $A$. Then  $\bar{A}=A \cup A'$.
+    all limit points in  $A$. Then  $\cl{A}=A \cup A'$.
 \end{theorem}
 \begin{proof}
     Let $x \in A'$, then every neighborhood of  $x$ intersects  $A$ at some
     distinct point  $x'$, by definition, so by theorem \ref{1.6.6},  $x \in
-    \bar{A}$, hence $A' \subseteq \bar{A}$, so  $A \cup A' \subseteq \bar{A}$.
-    Now, let $x \in \bar{A}$. If  $x \in A$, we are done. Otherwise, since every
+    \cl{A}$, hence $A' \subseteq \cl{A}$, so  $A \cup A' \subseteq \cl{A}$.
+    Now, let $x \in \cl{A}$. If  $x \in A$, we are done. Otherwise, since every
     neighborhood of  $x$ intersects  $A$, we have that they intersect at
-    distinct points, thus  $x \in A'$, therefore $\bar{A} \subseteq A \cup A' $.
+    distinct points, thus  $x \in A'$, therefore $\cl{A} \subseteq A \cup A' $.
 \end{proof}
 \begin{corollary}
     $A \subseteq X$ is closed if and only if $A' \subseteq A$.
 \end{corollary}
 \begin{proof}
-    If $A$ is closed, then  $\bar{A}=A=A \cup A'$, thus  $A' \subseteq A$. The
+    If $A$ is closed, then  $\cl{A}=A=A \cup A'$, thus  $A' \subseteq A$. The
     converse is obvious.		
 \end{proof}
 
@@ -269,10 +269,10 @@ We have by the very definitions that $\Int{A} \subseteq A \subseteq \bar{A}$
 \end{theorem}
 \begin{proof}
     Let $X$ be a Hausdorff space, and let  $x_0 \in X$. We have that
-    $\bar{\{x_0\}}=\bigcap_{\{x_0\} \in U}{U}$. Now let $x \neq x_0 \in X$.
+    $\cl{\{x_0\}}=\bigcap_{\{x_0\} \in U}{U}$. Now let $x \neq x_0 \in X$.
     Since $x \in \{x_0\}$, and $X$ is Hausdorff, the inters of the neighborhoods
-    of $x$ and  $ x_0$ is empty, thus $x \notin \bar{\{x_0\}}$, therefore
-    $\bar{\{x_0\}}=\{x_0\}$.
+    of $x$ and  $ x_0$ is empty, thus $x \notin \cl{\{x_0\}}$, therefore
+    $\cl{\{x_0\}}=\{x_0\}$.
 \end{proof}
 \begin{remark}
     We can extend this proof to finite point sets of size $n$ by induction.
