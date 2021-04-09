@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.4)  8 MAR 2021 09:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.2.4)  9 APR 2021 10:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -997,10 +997,10 @@ you left one out. Proceed, with fingers crossed.
 
 ) (./Chapters/Chapter2/Section2/section2.tex [23]
 Package epstopdf Info: Source file: <Figures/Chapter2/openBall.eps>
-(epstopdf)                    date: 2021-02-06 13:51:49
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 252569 bytes
 (epstopdf)             Output file: <Figures/Chapter2/openBall-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-06 13:54:05
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 249904 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/openBall-eps-converted-to.pdf Figures/Chapter2/openBall.eps>
 (epstopdf)             \includegraphics on input line 58.
@@ -1160,10 +1160,10 @@ and I'll forget about whatever was undefined.
 
 ) (./Chapters/Chapter2/Section4/section4.tex
 Package epstopdf Info: Source file: <Figures/Chapter2/squareToCylinderToTorus.eps>
-(epstopdf)                    date: 2021-02-06 14:10:35
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 65248 bytes
 (epstopdf)             Output file: <Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-06 14:12:16
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 73833 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf Figures/Chapter2/squareToCylinderToTorus.eps>
 (epstopdf)             \includegraphics on input line 17.
@@ -1185,10 +1185,10 @@ and I'll forget about whatever was undefined.
 
 [30 <./Figures/Chapter2/squareToCylinderToTorus-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/Chapter2/quotientOnABC.eps>
-(epstopdf)                    date: 2021-02-06 13:52:16
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 369627 bytes
 (epstopdf)             Output file: <Figures/Chapter2/quotientOnABC-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-03-03 19:11:11
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 372439 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/quotientOnABC-eps-converted-to.pdf Figures/Chapter2/quotientOnABC.eps>
 (epstopdf)             \includegraphics on input line 102.
@@ -1205,10 +1205,10 @@ File: Figures/Chapter2/diskSphere-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/Chapter2/diskSphere-eps-converted-to.pdf  used on input line 152.
 (pdftex.def)             Requested size: 286.66592pt x 142.73071pt.
 Package epstopdf Info: Source file: <Figures/Chapter2/squareTorus.eps>
-(epstopdf)                    date: 2021-02-06 13:19:51
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 382587 bytes
 (epstopdf)             Output file: <Figures/Chapter2/squareTorus-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-06 14:30:01
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 372300 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/squareTorus-eps-converted-to.pdf Figures/Chapter2/squareTorus.eps>
 (epstopdf)             \includegraphics on input line 159.
@@ -1261,10 +1261,10 @@ or  <return>  to continue without it.
 
 [33]
 Package epstopdf Info: Source file: <Figures/Chapter2/nonHomeomorphicPoints.eps>
-(epstopdf)                    date: 2021-02-06 15:29:41
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 118029 bytes
 (epstopdf)             Output file: <Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-06 15:40:48
+(epstopdf)                    date: 2021-03-08 09:36:51
 (epstopdf)                    size: 147701 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to.pdf Figures/Chapter2/nonHomeomorphicPoints.eps>
 (epstopdf)             \includegraphics on input line 281.
@@ -1278,7 +1278,24 @@ Package pdftex.def Info: Figures/Chapter2/nonHomeomorphicPoints-eps-converted-to
 
 ]
 Chapter 3.
-(./Chapters/Chapter3/Section1/section1.tex [37] [38]) (./Chapters/Chapter3/Section2/section2.tex)) [39]
+(./Chapters/Chapter3/Section1/section1.tex [37] [38]) (./Chapters/Chapter3/Section2/section2.tex
+./Chapters/Chapter3/Section2/section2.tex:25: Missing $ inserted.
+<inserted text> 
+                $
+l.25 ...uppose first that $c \in B_0$, then c \neq
+                                                   a, so either $c=b$ or  $a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapters/Chapter3/Section2/section2.tex:26: Missing $ inserted.
+<inserted text> 
+                $
+l.26      Since  $ B_
+                     0$ is open in $[a,b]$ as a subspace of $Y$, there is so...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+)) [39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./Topology.aux)
@@ -1304,7 +1321,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  68i,16n,98p,734b,1386s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/eletrico/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Topology.pdf (39 pages, 3910935 bytes).
+Output written on Topology.pdf (39 pages, 3912374 bytes).
 PDF statistics:
  627 PDF objects out of 1000 (max. 8388607)
  532 compressed objects within 6 object streams

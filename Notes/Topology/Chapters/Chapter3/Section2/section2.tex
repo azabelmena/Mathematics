@@ -18,4 +18,16 @@
     sets of  $L$  (the intervals and rays in $L$).
 \end{theorem}
 \begin{proof}
+    We show that convex sets are connected. Let $Y=A \cup B$ be a seperation, and choose  $a \in A$,
+     $b \in B$ with  $a<b$. We have that the interval of points in  $L$,  $[a,b] \subseteq Y$; and
+     we also have that $[a,b] \subseteq A_0 \cup B_0$ with $ A_0=A \cap [a,b]$ and $ B_0=B \cap
+     [a,b]$. Now $ A_0,B_0 \neq \emptyset$, so $[a,b]=A_0 \cup B_0$ is a seperation of $[a,b]$. Now
+     let $c=\sup{A_0}$. Suppose first that $c \in B_0$, then c \neq a, so either $c=b$ or  $a<c<b$.
+     Since  $ B_0$ is open in $[a,b]$ as a subspace of $Y$, there is some interval  $(d,c] \subseteq
+     B_0$.
+
+     If $c=b$, then  $d<c$ is an upperbound of  $ A_0$, which contradicts that $c$ is the least
+     upperbound. Now suppose that $c<b$. We have that since  $c,b \in B_0$, $(c,b] \cap A_0=
+     \emptyset$, then $(b,d] \cap A_0=(d,c] \cap (c,b] \cap A_0 = \emptyset$, and again we have
+     $d<c$ which gives us the contradiction. So  $c \notin B$. By similar reasoning  $c \notin A_0$.
 \end{proof}
