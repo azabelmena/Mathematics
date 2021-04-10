@@ -31,3 +31,24 @@
      \emptyset$, then $(b,d] \cap A_0=(d,c] \cap (c,b] \cap A_0 = \emptyset$, and again we have
      $d<c$ which gives us the contradiction. So  $c \notin B$. By similar reasoning  $c \notin A_0$.
 \end{proof}
+\begin{corollary}
+    $\R$ is connected and so are the intervals and rays of  $\R$.
+\end{corollary}
+\begin{proof}
+    $\R$ is a linear continuum.
+\end{proof}
+
+\begin{theorem}[The Intermediate Value Theorem]\label{3.2.2}
+    Let $f:X \rightarrow Y$ be continuous with  $X$ connected, and  $Y$ an ordered set under the
+    order topology. If  $a,b \in X$, and if  $r \in Y$ such that  $f(a)<r<f(b)$ or $f(b)<r<f(a)$,
+    then there exists a $c \in X$ for which  $f(c)=r$.
+\end{theorem}
+\begin{proof}
+    Let $r \in Y$ such that  $f(a)<r<f(b)$, without loss of generality. We have that $A=f(X) \cap
+    (-\infty)$ and $B=f(X) \cap (r ,\infty)$ are disjoint, nonempty sets open if $f(X)$ as a
+    subspace of $Y$. Now suppose there is no  $c \in X$ for which  $f(c)=r$, then $f(X)=A \cup B$ is
+    a seperation of $f(X)$, which contradicts theorem \ref{3.1.6}.
+\end{proof}
+
+\begin{example}
+\end{example} 

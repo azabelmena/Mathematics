@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1617977795 "Topology.tex" "Topology.pdf" "Topology" 1617977795
+["pdflatex"] 1618070524 "Topology.tex" "Topology.pdf" "Topology" 1618070524
   "/etc/texmf/web2c/texmf.cnf" 1604064585 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/eletrico/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk" 1610292277 17148 edef7afd0a29be46da2c41eb397adf3b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -243,7 +243,7 @@
   "Chapters/Chapter2/Section4/section4.tex" 1615210611 16902 5182469b5dca38cc57c82fdeb0e4a260 ""
   "Chapters/Chapter2/chapter2.tex" 1615210611 661 341d4d91b7033ec0bd1429b21cac8438 ""
   "Chapters/Chapter3/Section1/section1.tex" 1615210611 7814 81e6eb7d68a9ab10de9bedfd515d3d5d ""
-  "Chapters/Chapter3/Section2/section2.tex" 1617977794 1777 5672e6faf8e4c3d120d85e463c8fb2e2 ""
+  "Chapters/Chapter3/Section2/section2.tex" 1618070523 2678 800e0e8335a9e6b962484c20d6679536 ""
   "Chapters/Chapter3/chapter3.tex" 1615210611 517 2ce9d14fd24772062dfa8b562c707faf ""
   "Figures/Chapter1/basesOfCircularRectangularRegions.png" 1615210611 825314 761ca474224a9dffd78304f018349b25 ""
   "Figures/Chapter1/continuousFunctions.png" 1615210611 45834 21100e69ac71c48c6913c427622a5127 ""
@@ -262,11 +262,11 @@
   "Figures/Chapter2/squareTorus.eps" 1615210611 382587 42f624665e252db773855ced3f2e2130 ""
   "Library/Fonts/BlackboardBold.tex" 1615210611 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1615210611 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "Topology.aux" 1617977750 10771 994b02f57dfdbd9ee5ce21622e74274f "pdflatex"
-  "Topology.out" 1617977750 1111 4ba9dea9db986a593381044b9718d106 "pdflatex"
+  "Topology.aux" 1618070501 10850 d1b42ebdbe2c723b9a7986429c7e66e2 "pdflatex"
+  "Topology.out" 1618070501 1111 4ba9dea9db986a593381044b9718d106 "pdflatex"
   "Topology.tex" 1617975982 2325 3deeb204d4427014fdb93c65d9241dfd ""
   (generated)
-  "Topology.out"
-  "Topology.aux"
   "Topology.log"
+  "Topology.aux"
   "Topology.pdf"
+  "Topology.out"
