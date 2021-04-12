@@ -1,0 +1,166 @@
+\documentclass[12pt]{book}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage{pgfplots}
+    \pgfplotsset{compat=1.12,}
+\usepackage{enumitem}
+\usepackage{amsmath,amsfonts,amsthm,amssymb,graphicx,mathtools,hyperref}
+\usepackage{wrapfig}
+\usepackage{pdfpages}
+\usepackage[export]{adjustbox}
+\usepackage{tikz}
+\renewcommand\qedsymbol{$\blacksquare$}
+\usetikzlibrary{positioning}
+\input{Library/Fonts/BlackboardBold}
+\input{Library/Fonts/MathCalligraphy}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\cl}{cl}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{plain} % just in case the style had changed
+\newcommand{\thistheoremname}{}
+\newtheorem*{genericthm}{\thistheoremname}
+\newenvironment{namedtheorem}[1]
+  {\renewcommand{\thistheoremname}{#1}%
+   \begin{genericthm}}
+  {\end{genericthm}}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}[chapter]
+\newtheorem*{HW}{Homework}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{note}{Note}
+\newtheorem*{problem}{Problem}
+\newtheorem*{solution}{Solution}
+
+\renewcommand*{\proofname}{Proof}
+
+
+ 
+\title{Examen 2}
+\author{Alec Zabel-Mena\\ 801-16-9720 \\
+alec.zabel@upr.edu}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+%\includepdf[pages=-]{}
+
+\begin{enumerate}
+    \item[(5.2)] 
+        \begin{problem}
+            Prove by induction on $m$ that  $m^3 \leq 2^m$.		
+        \end{problem} 
+        \begin{solution}
+            For $m=10$, we have  $10^3=1000$ and  $2^^{10}=1024$, and $1000 \geq 1024$. Now
+            suppose for  $m \geq 10$, that  $m^3 \geq 2^m$. Then
+            $(m+1)^3=(m+1)(m+1)(m+1)(m^2+2m+1)(m+1)=m^3+(3m^2+3m+1) \geq m^3+m^3 \geq 2^m+2^m=2 \cdot
+            2^m=2^{m+1}$.	
+        \end{solution}
+
+    \item[(5.3)] 
+        \begin{problem}
+            Prove by induction on $n$, for all positive integers n, $n \geq 1$.
+        \end{problem}
+        \begin{solution}
+            For $n=1$,  $1 \geq 1$ is true. Now suppose that for all  $n \in \Z^+$ that  $n
+            \geq 1$. By the axioms of Peano, we have that the successor of $n$ is  $s(n)=n+1>n\geq 1$,
+            hence $n+1 \geq 1$.		
+        \end{solution}
+
+    \item [(8.2)] 
+        \begin{problem}
+            Define functions $f:\R \rightarrow \R$ and  $g:\R \rightarrow \R$ by $f(x)=x^3$ and
+            $g(x)=1-x$. Find the functions:
+                \begin{enumerate}[label=(\arabic*)]
+                    \item $f \circ f$.
+
+                    \item $f \circ g$.
+
+                    \item  $g \circ f$.
+
+                    \item  $g \circ g$.
+                \end{enumerate}
+
+                List the elements of the set $\{x \in \R:f \circ g(x)=g \circ f(x)\}$.
+        \end{problem} 
+        \begin{solution}
+            Let $f,g:\R \rightarrow \R$ be defined by $f:x \rightarrow x^3$ and  $g:x
+            \rightarrow 1-x$. Then  $f \circ f=f^2:\R \rightarrow \R$ is defined by  $f^2:x \rightarrow
+            x^2 \rightarrow (x^3)^3=x^9$. $f \circ g:\R \rightarrow \R$ is defined by  $f \circ g:x
+            \rightarrow 1-x \rightarrow (1-x)^3=(1-x)(1-x)(1-x)=(1-2x+x^2)(1-x)=x^3-x^2$. 
+            $g \circ f:\R \rightarrow \R$ is defined by $g \circ f:x 
+            \rightarrow x^3 \rightarrow 1-x^3$, and finally  $g \circ g=g^2:\R \rightarrow \R$ 
+            is defined by  $g^2:x \rightarrow 1-x \rightarrow 1-(1-x)=x$.
+
+            Now consider $f \circ g$ and  $g \circ f$, when is  $f \circ g=g \circ f$? Consider
+            $x^3-x^2=1-x^3$. Then $x^2+1=0$, which has no solutions in $\R$. So $f \circ g \neq g
+            \circ f$ for all  $x \in \R$.
+        \end{solution}
+        \begin{remark} 
+            The second part of this problem may be misconstrued, as in my copy of the book it says
+            to list all the elements of the set $\{x \in \R:fg(x)=gf(x)\}$; which may mean something
+            different than function composition for some authors. However, it is most likely that
+            composition is implied by that notation since in general $g \circ f \neq f \circ g$,
+            moreover it is a popular algebraic notation to express composition by $fg$ instead of
+            $f \circ g$.
+        \end{remark}
+
+    \item[(8.3)]\begin{problem}
+                Find the functions $f_i:\R \rightarrow \R$ with the images as follows:
+                    \begin{enumerate}[label=(\arabic*)]
+                        \item $ f_1(\R)=\R$.
+                
+                        \item $f_2(\R)=\R^+$.
+
+                        \item $f_3(\R)=\com{\R}{\Z}$.
+
+                        \item $f_4(\R)=\Z$.
+                    \end{enumerate}
+            \end{problem}
+            \begin{solution}
+                \begin{enumerate}[label=(\arabic*)]
+                    \item Take $f_1:\R \rightarrow \R$ by $ f_1:x \rightarrow x^3$. Then $ f_1(\R)=\R$.		
+
+                    \item Take $ f_2:\R \rightarrow \R$ by $f_2:x \rightarrow \begin{cases}
+                                                    x \text{, } 0 < x < 1 \\
+                                                    1 \text{, } x \geq 1
+                                              \end{cases}$.
+                        Then $ f_2(\R)=\R^+$.
+
+                    \item Take $ f_3:\R \rightarrow \R$ by $f(x)=x-\floor{x}$; where $\floor{x}$ is the
+                      greatest interger less or equal to $x$. Then  $ f_3(\R)=\com{\R}{\Z}$.
+
+                    \item Take $ f_4:\R \rightarrow \R$ by $ f_4:x \rightarrow \floor{x}$. Then $ f_4(\R)=\Z$.
+                \end{enumerate}
+            \end{solution}
+
+\end{enumerate}
+
+\end{document}

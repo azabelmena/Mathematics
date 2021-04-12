@@ -2,7 +2,6 @@
 
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
 \usepackage{verbatim}
 \usepackage{pgfplots}
     \pgfplotsset{compat=1.12,}
@@ -27,9 +26,7 @@
 \newcommand\setb[1]{\{#1\}}
 \newcommand\en{\ita{n }}
 \newcommand{\vbrack}[1]{\langle #1\rangle}
-\renewcommand{\bbar}[1]{\underline{#1}}
 \DeclareMathOperator{\ord}{ord}
-\DeclareMathOperator{\Int}{Int}
 \DeclareMathOperator{\diam}{diam}
 \DeclareMathOperator{\re}{Re}
 \DeclareMathOperator{\im}{Im}
@@ -65,8 +62,8 @@
 
 
 
-\title{Topología}
-\author{Alec Zabel-Mena.}
+\title{Topology}
+\author{Alec Zabel-Mena\\ \textbf{\underline{Text}} \\Topology ($2^{rd}$ edition) \\ James Munkres.}
 \date{\today}
 
 \begin{document}
@@ -74,7 +71,7 @@
 \maketitle
 
 \input{Chapters/Chapter1/chapter1.tex}
-%\input{Chapters/Chapter2/chapter2.tex}
+
 
 
 %\bibliographystyle{abbrv}
