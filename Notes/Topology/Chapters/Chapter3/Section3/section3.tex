@@ -2,113 +2,11 @@
 %	SECTION 1.1
 %----------------------------------------------------------------------------------------
 
-\section{Cauchy Sequences}
+\section{Components and Local Connectedness.}
 
 \begin{definition}
-    We call a sequence $\{x_n\}$ in a metric space $X$ a \textbf{Cauchy sequence} in $X$, or 
-    more simply, \textbf{Cauchy} in $X$ if for all $\epsilon>0$, there is an  $N \in \Z^+$ such that 
-    $d(x_n,x_m)<\epsilon$ whenever  $m,n \geq N$.
+    Let $X$ be a topological space. Define an equivalence relation  $\sim$ on  $X$ by taking  $x
+    \sim y$ if there is a onnected subspace of  $X$ containing  $x$ and  $y$. We call the
+    equivalence classes of  $X/\sim$  \textbf{connected components} (or \textbf{components}) of
+    $X$.
 \end{definition}
-
-\begin{definition}
-    Let $E$ be a nonempty subset of a metrix space  $X$, and lelt $S \subseteq \R$ be the 
-    all real numbers $d(x,y)$, with  $x,y \in E$. We call  $\sup{S}$ the  \textbf{diameter} 
-    of $E$, and denote it  $\diam{E}$.
-\end{definition}
-
-\begin{theorem}\label{3.3.1}
-    Let $\{x_n\}$ be a sequence, and let  $E_N$ be the set of all points  $p_N$ such that 
-    $_N<p_{n+1}$. Then $\{x_n\}$ is Cauchy if and only if  $\lim{\diam{E_N}}=0$ as 
-     $N \rightarrow \infty$.
-\end{theorem}
-\begin{proof}
-    Let $\{x_n\}$ be Cauchy,  Let  $x_{N_1},x_{N_2} \in E$ such that $d(x_n,x_{N_1})<
-    \frac{\epsilon}{2}$, and $d(x_{N_2},x_m)<\frac{\epsilon}{2}$. Then we see that $d(x_{N_1},x_{N_2}) \leq 
-    d(x_{N_1},x_n)+d(x_m, x_{N_2})<\epsilon$, so $\{x_{N_k}\}$ is Cauchy and we see that 
-    $\lim{\diam{E_N}}=0$. Now suppose that  $\lim{\diam{E}}=0$, then for any  $x_n,x_m \in S$, 
-    $d(x_n,0)< \frac{\epsilon}{2}$ and $d(0,x_m)< \frac{\epsilon}{2}$ implies that $d(x_n,x_m) \leq 
-    d(x_n,0)+d(0,x_m)<\epsilon$, whenever  $n,m>N$, for  $\epsilon>0$.
-\end{proof}
-
-\begin{theorem}\label{3.3.2}
-    \begin{enumerate}[label=(\arabic*)]
-        \item If $E \subseteq X$, then  $\diam{\hat{E}}=\diam{E}$.
-
-        \item If $\{K_n\}$ is a sequence of compact sets in  $X$, such that  $K_{n+1} \subseteq K_n$, and 
-            if  $\lim{\diam{K_n}}=0$ as  $n \rightarrow \infty$, then  $\bigcap_{i=1}^{infty}{K_i}$ contains 
-            exactly one point.
-    \end{enumerate}
-\end{theorem}
-\begin{proof}
-    Clearly $\diam{E} \leq \diam{\hat{E}}$. Now let  $\epsilon>0$, and choose  $x,y \in \hat{E}$, then 
-    there are points $x',y' \in \hat{E}$ such that  $d(x,x')<\frac{\epsilon}{2}$ and $d(y,y')<
-    \frac{\epsilon}{2}$. Hence, $d(x,y) \leq d(x,x')+d(x',y')+d(y'y)<\epsilon \diam{E}$, then 
-    choosing  $\epsilon$ arbitrarily small,  $\diam{\hat{E}} \leq \diam{E}$.
-
-    Now, we also have that by the nested interval theorem that $K=\bigcap{K_i}$ is nonempty. Now 
-    suppose that  $K$ contains more that one point. then $\diam{K}>0$, and since  $K \subseteq K_n$ for 
-    all  $n$,  $diam{K} \leq \diam{K_n}$, a contradiction. Thus  $K$ contains exactly one element.
-\end{proof}
-
-\begin{theorem}\label{3.3.3}
-    \begin{enumerate}[label=(\arabic*)]
-        \item In any metric space $X$, every convergent sequence is a Cauchy sequence.
-
-        \item If $X$ is compact, and  $\{x_n\}$ is Cauchy in  $X$, then $\{x_n\}$ 
-            converges to a point in  $X$.
-    \end{enumerate}
-\end{theorem}
-\begin{proof}
-    \begin{enumerate}[label=(\arabic*)]
-        \item If $x_n \rightarrow x$, and $\epsilon>0$ such that there is an  $N \in \Z^+$ such that 
-            $d(x_n,x)<\frac{\epsilon}{2}$ for all $n \geq N$, then for  $m \geq N$, we have 
-            $d(x_n,x_m) \leq d(x_n,x)+d(x,x_m)<\epsilon$. Thus  $\{x_n\}$ is Cauchy.
-
-        \item Let $\{x_n\}$ be Cauchy, and let  $E_N$ be the set of all points  $x_N$ for 
-            which  $x_N<x_{N+1}$. Then  $\lim{\diam{\hat{E}}}=0$, then being closed in  $X$, each 
-            $\hat{E_N}$ is compact in  $X$, and  $\hat{E_{N+1}} \subseteq \hat{E_N}$, so 
-            by theorem \ref{3.3.2}, there is a unique  $x \in X$ in all of $\hat{E_N}$. Now for 
-            $\epsilon>0$, there is an  $N_0 \in \Z^+$ for which $\diam{\hat{E}}<\epsilon$. Then for all 
-            $x_n \in \hat{E}$,  $d(x_n,x)<\epsilon$ whenever  $n \geq N_0$.
-    \end{enumerate}		
-\end{proof}
-
-\begin{corollary}[The Cauchcy Criterion]
-    Every Cauchy sequence in $\R^k$ converges to a point in  $\R^k$.
-\end{corollary}
-\begin{proof}
-    Let $\{x_n\}$ be Cauchy in  $\R^k$, define $E_N$ as in  $(2)$, then for some  $N \in \Z^+$, 
-$\diam{E}<1$, and so  $\{x_n\}$ us the union of all  $E_n$, and ther set of points  
-$\{x_1,\dots, x_{N-1}\}$, so $\{x_n\}$ is bounded, and thus has a compact closure, it follows then 
-that  $x_n \rightarrow x$ for some  $x \in \R^k$.
-\end{proof}
-
-\begin{definition}
-    We call a metric space \textbf{complete} if every Cauchy sequence in the space converges.		
-\end{definition}
-
-\begin{theorem}\label{3.3.4}
-    All compact metric spaces, and all Euclidean spaces are complete.
-\end{theorem}
-
-\begin{example}
-    Consider $\Q$ together with the metric  $|x-y|$	. The metric space induced on $\Q$ by  $|\cdot|$ is 
-    not complete.
-\end{example} 
-
-\begin{definition}
-    A sequence $\{x_n\}$ in $\R$ is said to be \textbf{monotonically increasing} if 
-    $x_n \leq x_{n+1}$, $\{x_n\}$ is said to be \textbf{monotonically decreasing} if $x_{n+1}<x_n$. 
-    We call  $\{x_n\}$ \textbf{monotonic} if it is either monotonically increasing or monotonically 
-    decreasing.
-\end{definition}
-
-\begin{theorem}\label{3.3.5}
-    A monotonic sequence converges if and only if it is bounded.
-\end{theorem}
-\begin{proof}
-    Suppose, without loss of generality, that $\{x_n\}$ is monotonically increasing. If 
-    $\{x_n\}$ is bounded, then  $x_n \leq x$, then for all  $\epsilon>0$, there is an  $N \in \Z^+$ 
-    for which  $x-\epsilon<x_N \leq x$. Then for  $n \geq N$,  $x_n \rightarrow x$. The converse follows 
-    from theorem  \ref{3.1.2}.
-\end{proof}
