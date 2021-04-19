@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'Topology.blg'
+[96] biber:340> INFO - === Mon Apr 19, 2021, 16:48:39
+[114] Biber.pm:415> INFO - Reading 'Topology.bcf'
+[202] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[220] Biber.pm:4340> INFO - Processing section 0
+[233] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[235] bibtex.pm:1689> INFO - LaTeX decoding ...
+[237] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[306] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[307] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[307] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[307] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[309] bbl.pm:654> INFO - Writing 'Topology.bbl' with encoding 'UTF-8'
+[310] bbl.pm:757> INFO - Output to Topology.bbl
