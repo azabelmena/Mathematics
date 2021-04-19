@@ -11,6 +11,10 @@
 \usepackage[export]{adjustbox}
 \usepackage{tikz, tikz-cd}
 \usepackage{graphicx}
+\usepackage{quiver}
+\usepackage[backend = biber]{biblatex}
+\addbibresource{references.bib}
+\nocite{*}
 \renewcommand\qedsymbol{$\blacksquare$}
 \renewcommand{\bar}[1]{\overline{#1}}
 \usetikzlibrary{positioning}
@@ -67,7 +71,7 @@
 
 
 \title{Topology}
-\author{Alec Zabel-Mena\\ \textbf{\underline{Text}} \\Topology ($2^{rd}$ edition) \\ James Munkres.}
+\author{Alec Zabel-Mena}
 \date{\today}
 
 \begin{document}
@@ -78,8 +82,6 @@
 \input{Chapters/Chapter2/chapter2.tex}
 \input{Chapters/Chapter3/chapter3.tex}
 
-
-%\bibliographystyle{abbrv}
-%\bibliography{references}
+\printbibliography
 
 \end{document}
