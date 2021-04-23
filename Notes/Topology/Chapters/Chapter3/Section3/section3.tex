@@ -4,6 +4,19 @@
 
 \section{Components and Local Connectedness.}
 
+\begin{proposition}\label{3.3.1}
+    Let $\sim$ be a relation defined on the topological space  $X$ by:  $x \sim y$ if there exists a
+    connected subspace containing both  $x$ and  $y$. Then $\sim$ is an equivalence relation on
+    $X$.
+\end{proposition}
+\begin{proof}
+    Clearly, $x \sim x$. Now suppose that  $x \sim y$, then there is a connected subspace containing
+    both  $x$ and  $y$, by definition,  $y \sim x$. Now suppose that  $x \sim y$ and  $y \sim z$.
+    Then there are connected subspaces  $U$ and  $V$ with  $x,y \in U$,  $y,z \in V$. Since $y \in U
+    \cap V$, by theorem \ref{3.1.4}, $U \cup V$ is a connected subspace with  $x,z \in U \cup V$.
+    That is  $x \sim z$. 
+\end{proof}
+
 \begin{definition}
     Let $X$ be a topological space. Define an equivalence relation  $\sim$ on  $X$ by taking  $x
     \sim y$ if there is a onnected subspace of  $X$ containing  $x$ and  $y$. We call the
