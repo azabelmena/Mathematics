@@ -23,3 +23,175 @@
     equivalence classes of  $X/\sim$  \textbf{connected components} (or \textbf{components}) of
     $X$.
 \end{definition}
+
+The following theorem gives us the equivalence classes of $X$.
+
+\begin{theorem}\label{3.3.2}
+    The components of $X$ are disjoint nonempty subspaces of  $X$, whose union is  $X$ such that
+    each nonempty connected subspace of  $X$ intersects only one of them.
+\end{theorem}
+\begin{proof}
+    Since components are equivalence classes of $X$ under $\sim$ (as defined in proposition
+    \ref{3.3.1}), they partition $X$. Then they are disoint, and their union is $X$.
+
+    Now let  $A$ be a connected subspace intersecting at least two components  $C_1$ and $C_2$ at
+    elements $x_1$ and $ x_2$ respectively. Then $x_1,x_2 \in A$; by definition of $\sim$,  $x_1
+    \sim x_2$. This makes $C_1=C_2$ since they are equivalence classes.
+
+    Now let $C$ be a component with  $ x_0 \in C$ then for all $x \in C$, $ x_0 \sim x$, then there
+    is a connected subspace $A_x$ of $X$ with  $x-,x \in A_x$. Then $A \subseteq C$, moreover 
+        \begin{equation*}
+            C=\bigcup_{x \in C}{A_x}
+        \end{equation*}
+    Since $A_x$ is connected for each  $x$, and  $ x_0 \in \bigcap{A_x}$, by theorem \ref{3.1.4},
+    $C$ is connected.
+\end{proof}
+\begin{corollary}
+    If $X$ is a connected topological space, then it has only one component.
+\end{corollary}
+\begin{proof}
+    Notice that $X$ is a subspace of itself. So if $X$ intersects components  $C_1$ and $C_2$ at
+    points  $x_1$ and  $x_2$ respectively, then $C_1=C_2$.
+\end{proof}
+
+\begin{lemma}\label{3.3.3}
+    Components of a topological space are closed.
+\end{lemma}
+\begin{proof}
+    Let $C$ be a component of a topological space  $X$. Since  $C$ is connected,  $\cl{C}$ is
+    connected, and is a subspace of $X$ containing (any) $x,y \in C$ hence by definition $cl{C}
+    \subseteq C$.
+\end{proof}
+
+\begin{example}
+    Consider $\Q$ as a subspace of  $\R$ under  $|\cdot|$.  $\Q$ is Hausdorff, so consider
+    a subspace  $A$ of  $\Q$ with atleast two elements  $q_1,q_2$ with $ q_1<q_2$. SInce
+    $\com{\R}{\Q}$ is dense in $\R$, then there exists an $i \in \com{\R}{\Q}$ such that $
+    q_1<i<q_2$. Now define $U=(-\infty,i)$ and $V=(i,\infty)$. We have $ q_1 \in U$, $ q_2
+    \in V$, $U \cap V=\emptyset$ and  $A=U \cup V$, that is  $U$ and  $V$ form a seperation
+    of $A$. Thus if  $A$ is to be connected,  $A$ must be a singleton. That is all the
+    components of  $\Q$ are singletons.
+
+    Now if  $A$ was an open component in  $\Q$, then the subspace topology on  $\Q$ would be
+    $2^{\Q}$. Now notice that the sequence $\{\frac{1}{n}\}_{\Z^+}$ has a limit point at $0$
+    in the topology induced by  $|\cdot|$, but it does not have a limit point at  $0$ under
+    $2^{\Q}$. SO none of the components of $\Q$ are open.
+\end{example}
+
+We also define equivalence classes of a topological space using path connectedness.
+
+\begin{proposition}\label{3.3.4}
+    Let $X$ be a topological space and define $\sim$ on $X$ by $x \sim y$ if  there is an $xy$-path
+    in  $X$. Then  $\sim$ is an equivalence relation on $X$.
+\end{proposition}
+\begin{proof}
+    The function $f:[a,b] \rightarrow X$ defined by $f:t \rightarrow t$ defines a path from $x$ to
+    $x$, so  $x \sim x$. Now suppose  $x \sim y$, then there is a path  $f:[0,1] \rightarrow X$ from
+    $x$ to  $y$. Define  $g:[0,1] \rightarrow X$ by $g(t)=f(1-t)$. Since $f$ is a path, $g$ is
+    continuous, and $g(0)=f(1)=y$ and $g(1)=f(0)=x$, so $g$ is a path from  $y$ to  $x$ and  $y \sim
+    x$. Lastly, suppose  $x \sim y$ and  $y \sim z$. Then there are paths  $f:[0,1] \rightarrow X$
+    and $g:[1,2] \rightarrow X$ from $x$ to  $y$ and  $y$ to  $z$ respectively.  Since
+    $f(1)=g(1)=y$ for $\{1\}=[0,1] \cap [1,2]$, and $f$ and  $g$ are continuous; construct, by the
+    pasting lemma, a continuous function $h:[0,2] \rightarrow X$. Then $h(0)=f(0)=x$ and
+    $h(2)=g(2)=z$, hence $h$ is a path from $x$ to  $z$. That is  $x \sim z$. 
+\end{proof}
+
+\begin{definition}
+    Let $X$ be a topological space and  $\sim$ the equivalence relation defined by  $x \sim y$ if
+    there is an  $xy$-path in  $X$. Then the equivalence classes of  $X$ are called \textbf{path
+    components}.
+\end{definition}
+
+\begin{theorem}\label{3.3.5}
+    The path components of a topological space $X$ are disjoint path connected subspaces of $X$
+    whose union is $X$, such that each nonempty path connected subspace of $X$ intersects only one
+    of them.
+\end{theorem}
+\begin{proof}
+    That path components are disjoint and form $X$ in union is guaranteed by them being equivalence
+    classes. Now let  $P_1$ and $P_2$ be path components and let $A$ be a path connected subspace
+    intersecting  $ P_1$ and $ P_2$ at $ x_1$ and $x_2$ respectivley. Then $ x_1,x_2 \in A$, and since
+    $A$ is path connected, $ x_1 \sim x_2$, therefore $P_1=P_2$.
+
+    Now let $P$ be a path component and choose $ x_0 \in P$. Then for all $x \in P$,  $ x_0 \sim x$,
+    that is there is a path connected subspace $A_x$ with  $ x_0,x \in X$. This make $A_x \subseteq
+    P$. Since there exists a path from  $ x_0$ to $x$, both of which are in  $P$, this makes  $P$
+    path connected.
+\end{proof}
+\begin{corollary}
+    If $X$ is path connected, then it has only one path component.
+\end{corollary}
+
+\begin{example}
+    The topologist's sine curve, $\cl{S}$, with $S=\{x \times \sin{\frac{1}{x}}: 0 < x \leq 1\}$ is
+    connected, and hence only has one component. However, $\cl{S}$ is not path connected, notice
+    that $S$ is a path component, and  $0 \times [-1,1]$ is another path component. So $\cl{S}$ has
+    two path components. Here $S$ is open, in  $\cl{S}$ (for otherwise, $\cl{S}=S$ which cannot
+    happen), and $0 \times [-1,1]$ is closed in $\cl{S}$.
+
+    Now construct the space $S'$ from  $\cl{S}$ by deleting all points with rational second
+    coordinates in $[-1,1]$. Then $S'$ has one component, but uncountably many path components;
+    since countably many points were deleted and leaving only those points with second coordinat in
+    $\com{[-1,1]}{\Q}$ (which is homeomorphic to $\com{\R}{\Q}$, which is uncountable).
+\end{example}
+
+We now define connectedness in the local.
+
+\begin{definition}
+    A topological space is \textbf{locally connected} at $x$ if for every neighborhood  $U$ of  $x$,
+    there is a connected neighborhood  $V$ with $x \in V \subseteq U$. We call  $X$  \textbf{locally
+    connected} if it is locally connected at every point.
+\end{definition}
+
+\begin{definition}
+    A topological space is \textbf{locally path connected} at $x$ if for every neighborhood  $U$ of  $x$,
+    there is a path connected neighborhood  $V$ with $x \in V \subseteq U$. We call  $X$  \textbf{locally
+    path connected} if it is locally path connected at every point.
+\end{definition}
+
+\begin{theorem}\label{3.3.6}
+    A topological space $X$ is locally connected if and only if for every open set $U$ of $X$, each
+    component of  $U$ is open in  $X$.
+\end{theorem}
+\begin{proof}
+    Suppose that $X$ is locally connected, and let  $U$ be open in  $X$; and let  $C$ be a component
+    of  $U$. If  $x \in C$, choose a neighborhood $V$ in $X$ with $x \in V \subseteq U$, since  $V$ is
+    connected,  $V \subseteq C$, thus  $C$ is open in  $X$.
+
+    Now suppose that for every component  $C$ of  $U$, that  $C$ is open in  $X$. Let  $x \in X$,
+    and a neighborhood  $U$ of  $x$, and let  $C$ be a component of  $U$ with  $x \in C$. Then we
+    see that $C$ is a connected neighborhood with  $x \in C \subseteq U$. Therefore  $X$ is locally
+    connected.
+\end{proof}
+
+\begin{theorem}\label{3.3.7}
+    A topological space $X$ is locally path connected if and only if for every open set $U$ of $X$, each
+    path component of  $U$ is open in  $X$.
+\end{theorem}
+\begin{proof}
+    Suppose that $X$ is locally path connected, and let  $U$ be open in  $X$; and let  $P$ be a path component
+    of  $U$. If  $x \in P$, choose a path connected neighborhood $V$ in $X$ with $x \in V \subseteq U$, since  $V$ is
+    path connected,  $V \subseteq P$, thus  $P$ is open in  $X$.
+
+    Now suppose that for every path component  $P$ of  $U$, that  $P$ is open in  $X$. Let  $x \in X$,
+    and a neighborhood  $U$ of  $x$, and let  $P$ be a path component of  $U$ with  $x \in P$. Then we
+    see that $P$ is a path connected neighborhood with  $x \in P \subseteq U$. Therefore  $X$ is locally
+    path connected.
+\end{proof}
+
+\begin{theorem}\label{3.3.8}
+    If $X$ is a topological space, each path component of  $X$ lies in a component of $X$. If $X$ is
+    locally path connected, then path components are components.
+\end{theorem}
+\begin{proof}
+    Since path components are path connected, they are connected, and hence must lie within
+    componenpath components are path connected, they are connected, and hence must lie within
+    components.
+
+    Now let $X$ be locally path connected and  $P$ a path component, and  $C$ a component of  $X$
+    sucht that  $P \subseteq C$, but  $P \neq C$. Define  $Q=\bigcup{P'}$, where each $P' \neq P$ is
+    a path component intersecting  $C$, then  $P' \subseteq C$. So  $C=P \cup Q$. Since  $X$ is
+    locally path connected, each path component is open in  $X$, thus  $P,Q \neq \emptyset$ are
+    open, and disjoit, hence they form a seperation of $C$, which contradicts its connectedness.
+    Therefore  $P=C$.
+\end{proof}

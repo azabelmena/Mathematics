@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber Topology"] 1618865318 "Topology.bcf" "Topology.bbl" "Topology" 1619191035
-  "Topology.bcf" 1618865380 106913 1c3516d44a6f38712ddc8fd6ec963d28 "pdflatex"
+["biber Topology"] 1618865318 "Topology.bcf" "Topology.bbl" "Topology" 1619212066
+  "Topology.bcf" 1619212044 106913 1c3516d44a6f38712ddc8fd6ec963d28 "pdflatex"
   "references.bib" 1618843401 154 83166e9f4b8762d94856fc165356fd6a ""
   (generated)
-  "Topology.blg"
   "Topology.bbl"
-["pdflatex"] 1619191035 "Topology.tex" "Topology.pdf" "Topology" 1619191035
+  "Topology.blg"
+["pdflatex"] 1619212066 "Topology.tex" "Topology.pdf" "Topology" 1619212066
   "/etc/texmf/web2c/texmf.cnf" 1618635463 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/eletrico/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk" 1610292277 17148 edef7afd0a29be46da2c41eb397adf3b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -271,8 +271,9 @@
   "Chapters/Chapter2/chapter2.tex" 1618845499 661 341d4d91b7033ec0bd1429b21cac8438 ""
   "Chapters/Chapter3/Section1/section1.tex" 1615210611 7814 81e6eb7d68a9ab10de9bedfd515d3d5d ""
   "Chapters/Chapter3/Section2/section2.tex" 1618865392 8846 09db3b5b696f63d3daa9f6b1c896271d ""
-  "Chapters/Chapter3/Section3/section3.tex" 1618851372 570 66cd352a4b38536fcd3f2105bb82d75d ""
-  "Chapters/Chapter3/chapter3.tex" 1618851556 516 c08c401825ac5fb594f1f89eb54c8969 ""
+  "Chapters/Chapter3/Section3/section3.tex" 1619212065 10579 b66ff15c01bc05c2b14ddcb473b789d5 ""
+  "Chapters/Chapter3/Section4/section4.tex" 1619212034 755 85643ca4bd1302d8882ff15f6cd16615 ""
+  "Chapters/Chapter3/chapter3.tex" 1619211860 515 c28ec1158685ad708ab485832ac332da ""
   "Figures/Chapter1/basesOfCircularRectangularRegions.png" 1615210611 825314 761ca474224a9dffd78304f018349b25 ""
   "Figures/Chapter1/continuousFunctions.png" 1615210611 45834 21100e69ac71c48c6913c427622a5127 ""
   "Figures/Chapter1/convexSeAndNonConvexSet.png" 1615210611 331821 65f63bf9b203418c0376d3adc5c5e735 ""
@@ -292,16 +293,16 @@
   "Figures/Chapter3/topologistsSineCurve.eps" 1618845563 299523 4cc178464976f216ca1fc15f840530e2 ""
   "Library/Fonts/BlackboardBold.tex" 1615210611 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1615210611 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "Topology.aux" 1618865380 14310 df5d086c7636be80aec75ea841048901 "pdflatex"
+  "Topology.aux" 1619212044 14871 f9256433356afbf5e104170f6163732b "pdflatex"
   "Topology.bbl" 1618865320 1571 a32e4049733244eed94a19714622d6bf "biber Topology"
-  "Topology.out" 1618865380 1193 f4544f777f537a8658aa6187a1c23f0c "pdflatex"
-  "Topology.run.xml" 1618865380 2333 c812214e5a4401b95fab67bd0903fdf2 "pdflatex"
+  "Topology.out" 1619212044 1255 7a395b7f0276c58002c5e516b718e75b "pdflatex"
+  "Topology.run.xml" 1619212044 2333 c812214e5a4401b95fab67bd0903fdf2 "pdflatex"
   "Topology.tex" 1618850150 2315 4b4a20d7762ffd396f94ded57765b08c ""
   "quiver.sty" 1618845939 1606 c6f282754d9607d1f07ab5f09ca65cab ""
   (generated)
-  "Topology.bcf"
-  "Topology.run.xml"
-  "Topology.out"
-  "Topology.pdf"
   "Topology.aux"
+  "Topology.run.xml"
   "Topology.log"
+  "Topology.pdf"
+  "Topology.bcf"
+  "Topology.out"
