@@ -5,9 +5,9 @@
 \section{Compact Spaces.}
 
 \begin{definition}
-    A collection $\{A\}$ of subsets of a topological space $X$ is said to be a  \textbf{cover}, or a
+    A collection $\Ac=\{A_{\alpha}\}$ of subsets of a topological space $X$ is said to be a  \textbf{cover}, or a
     \textbf{covering} of $X$ if  $\bigcup{A}=X$. We call $\{A\}$ an \textbf{open cover} if each $A$
-    is open in  $X$. If  $\{A'\}$ is a subcollection of $\{A\}$ that also covers $X$, we call
+    is open in  $X$. If  $\{A'\}$ is a subcollection of $\Ac$ that also covers $X$, we call
     $\{A'\}$ a \textbf{subcover} of $X$.
 \end{definition}
 
@@ -15,3 +15,27 @@
     We call a topological space $X$ \textbf{compact} if for every open cover of $X$, there is a
     finite subcover of $X$.
 \end{definition}
+
+\begin{example}
+    \begin{enumerate}[label=(\arabic*)]
+        \item     $\R$ is not compact. Consider the following cover of  $\R$:
+            \begin{equation*}
+                \Ac=\{(n,n+2):n \in \Z\}
+            \end{equation*}
+            however, there is no finite subcollection of $\Ac$ that is a subcover of  $\R$.
+
+        \item The subspace $X=\{0\} \cup \{\frac{1}{n}: n \in \Z\}$ of $\R$ is compact. Let  $\Ac$
+            be a cover of  $X$. There is a  $U \in \Ac$ with  $0 \in U$ and $U$ contains all but
+            finitely many of the points  $ \frac{1}{n}$. Now choose for each $\frac{1}{n} \in
+            \com{X}{U}$ an element of $\Ac$ $A_{n}$ containing it. Then for all $n$,  $\{A_n\}$ is
+            finite and covers $X$.
+
+        \item If  $X$ is a finite topological space, then it is compact, since every open cover of
+            $X$ is finite.
+
+        \item The interval  $(0,1]$ is not compact. The open cover $\Ac=\{(\frac{1}{n}, 1]: n \in
+            \Z^+\}$ contains no finite subcollection of $\Ac$ that covers  $(0,1]$. Likewise,
+            $(0,1)$ is not compact by the same argument. However, $[0,1]$ is compact.
+    \end{enumerate}
+ 
+\end{example} 
