@@ -37,5 +37,60 @@
             \Z^+\}$ contains no finite subcollection of $\Ac$ that covers  $(0,1]$. Likewise,
             $(0,1)$ is not compact by the same argument. However, $[0,1]$ is compact.
     \end{enumerate}
- 
 \end{example} 
+
+\begin{lemma}\label{3.4.1}
+    Let $Y$ be a subspace of a topological space  $X$.  $Y$ is compact if and only if every open
+    cover of  $Y$, by open sets of  $X$ has a finite subcover of $Y$.
+\end{lemma}
+\begin{proof}
+    Suppose $Y$ is compact and let  $\{A_\alpha\}$ be a cover of $Y$ with  $A_\alpha$ open in  $X$
+    for all  $\alpha$. Since  $\{A_\alpha\}$ covers $Y$, so does the collection  $\{A_\alpha \cap
+    Y\}$, where $A_\alpha \cap Y$ is open in  $Y$ for all  $\alpha$. Since  $Y$ is compact, choose
+    the finite subcollection  $\{A_i \cap Y\}_{i=1}^{n}$ to be a finite subcover of $Y$; i.e.
+    $\{A_i \cap Y\}_{i=1}^{n} \subseteq \{A_\alpha\}$.
+
+    Conversely, suppose that for every cover $\{A_\alpha\}$, open in  $X$, of  $Y$ that
+    $\{A_\alpha\}$ contains a finite subcover of $Y$. Choose  $A_\alpha'=A_\alpha \cap Y$ for all
+    $\alpha$; then $\{A_\alpha'\}$ is an open cover of $Y$. 
+    By hypthesis, there is a finite subcover $\{A_i\}_{i=1}^n$, and by our assignment, we
+    get that $\{A_i'\}_{i=1}^n \subseteq \{A_\alpha'\}$ is also a finite subcover of $Y$. Therefore
+     $Y$ is compact as a subspace of  $X$.
+\end{proof}
+
+\begin{theorem}\label{3.4.2}
+    Every closed subspace of a compact space is compact.
+\end{theorem}
+\begin{proof}
+    Let $Y$ be a closed subspace of a compact space $X$. Let $\{A_\alpha\}$ be an open cover of $Y$
+    with  $A_\alpha$ open in  $X$ for all  $\alpha$. Consider  $\{B_\alpha\}=\{A_\alpha\} \cup
+    \com{X}{Y}$. Since $\{A_\alpha\}$ covers $Y$,  $\{B_\alpha\}$ covers $X$. Now take some finite
+    subcollection  $\{B_i\}_{i=1}^n$. If it contains $\com{X}{Y}$, then just consider
+    $\com{\{B_i\}}{(\com{X}{Y})}$. Then this collection is a finite subcover of $Y$.
+\end{proof}
+
+\begin{theorem}\label{3.4.3}
+    Every compact subspace of a Hausdorff space is closed.
+\end{theorem}
+\begin{proof}
+    Let $Y$ be a compact subsapce of a Hausdorff space  $X$. Choose  $x_0 \in \com{X}{Y}$ and for
+    each $y \in Y$ choose disjoint neighborhoods  $U_y$ and  $V_y$ of  $ x_0$ and $y$ respectively.
+    The collection  $\{V_y\}$ covers $Y$ by open sets in  $X$, hence there is a finite subcover, by
+    theorem \ref {3.4.2}, $\{V_{y_n}\}$ of $Y$. Take  $V=\bigcup_{i=1}^n{V_{y_i}}$ to be open in
+$X$, and take  $U=\bigcap_{i=1}^n{U_{y_i}}$ also open in $X$. Then  $Y \subseteq V$ and  $V \cap
+U=\emptyset$; for take $z \in V$,  $z \in V_{y_i}$ for some $1 \leq i \leq n$. Hence  $z \notin
+U_{y_i}$, so $z \notin U$. Then  $U$ is a neighborhood of  $X$, disjoint from  $Y$, making
+$\com{X}{Y}$ open in $X$. Therefore  $Y$ is closed in  $X$.
+\end{proof}
+
+\begin{figure}[h] 
+    \centering
+    \includegraphics[scale=0.2]{Figures/Chapter3/compactHausdorff1.eps}
+    \caption{}
+    \label{fig_3.1}
+\end{figure}
+
+\begin{corollary}
+    If $Y$ is a compact subspace of a Hausdorff space $X$, and  $ x_0 \in \com{X}{Y}$, then there
+    exists opensets $U$ and  $V$ in  $X$ with  $ x_0 \in U$ and $Y \subseteq V$, respectively.
+\end{corollary}
