@@ -1,0 +1,71 @@
+\documentclass[12pt]{book}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage{pgfplots}
+    \pgfplotsset{compat=1.12,}
+\usepackage{enumitem}
+\usepackage{amsmath,amsfonts,amsthm,amssymb,graphicx,mathtools,hyperref}
+\usepackage{wrapfig}
+\usepackage[export]{adjustbox}
+\usepackage{tikz}
+\renewcommand\qedsymbol{$\blacksquare$}
+\usetikzlibrary{positioning}
+\input{Library/Fonts/BlackboardBold}
+\input{Library/Fonts/MathCalligraphy}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\Hom}{hom}
+\DeclareMathOperator{\ker}{ker}
+\DeclareMathOperator{\deg}{deg}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{plain} % just in case the style had changed
+\newcommand{\thistheoremname}{}
+\newtheorem*{genericthm}{\thistheoremname}
+\newenvironment{namedtheorem}[1]
+  {\renewcommand{\thistheoremname}{#1}%
+   \begin{genericthm}}
+  {\end{genericthm}}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}[chapter]
+\newtheorem*{HW}{Homework}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{note}{Note}
+
+\renewcommand*{\proofname}{Proof}
+ 
+\title{Ring Theory}
+\author{Alec Zabel-Mena\\ \textbf{\underline{Text}} \\  
+Herstein (1965). Topics in Algebra. Blaisdel Publishing Co.}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{Chapters/Chapter1/chapter1.tex}
+
+\end{document}
