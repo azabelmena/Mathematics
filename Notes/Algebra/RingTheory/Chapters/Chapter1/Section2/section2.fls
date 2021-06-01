@@ -1,9 +1,0 @@
-PWD /home/eletrico/Mathematics/Notes/Algebra/RingTheory/Chapters/Chapter1/Section2
-INPUT /etc/texmf/web2c/texmf.cnf
-INPUT /usr/share/texmf/web2c/texmf.cnf
-INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT section2.tex
-OUTPUT section2.log
-INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm

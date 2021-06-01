@@ -4,9 +4,326 @@
 
 \section{Linear Independence and Bases.}
 \label{section1}
- \begin{definition}
+
+\begin{definition}
      If $V$ is a vector space over a field  $F$ and ive  $ v_1, \dots,v_n \in
      V$, then we call any element $v \in V$ of the form $v=\alpha_1v_1+\dots+\alpha_n 
      v_n$ for $\alpha_1, \dots, \alpha_n \in F$ a \textbf{linear comination} 
-     of $ v_1, \dots, v_n$.
+     of $ v_1, \dots, v_n$ over $F$.
  \end{definition}
+
+ \begin{definition}
+     Let $V$ be a vector space. We call the set of all linear combinations of
+     finite sets of elements of a nonempty subset  $S \subseteq V$ the
+     \textbf{linear span} of $S$; and we write $\Span{S}$.
+ \end{definition}
+
+ \begin{lemma}\label{1.2.1}
+     If $V$ is a vector space, and  $S \subseteq V$ is nonempty, then
+     $\Span{S}$ is a subspace of $V$.
+ \end{lemma}
+ \begin{proof}
+     Since $\Span{S}$ is the set of all linear combinations of finite sets of
+     elements of $S$, it is clear that  $\Span{S} \subseteq V$. Now let $v,w \in
+     \Span{S}$, then $v=\lambda_1v_1+ \dots+\lambda_nv_n$ and
+     $w=\mu_1w_1+\dots+\mu_mw_m$; where $\lambda_i,\mu_j \in F$ and  $v_i,w_j
+     \in S$ for  $1 \leq i \leq n$ and  $1 \leq j \leq m$. Now consider
+     $\alpha,\beta \in F$, then  $\alpha v+\beta w=\alpha(\lambda_1v_1+
+     \dots+\lambda_nv_n)+\beta(\mu_1w_1+\dots+\mu_mw_m)=(\alpha\lambda_1)v_1+\dots+(\alpha\lambda_n)v_n+(\beta\mu_1)w_1+\dots+(\beta\mu_m)w_m$
+     which is a linear combination of the finite set $\{v_1, \dots, v_n, w_1,
+     \dots, w_m\}$ of elements of $S$. Therefore  $\alpha v+\beta w \in
+     \Span{S}$.
+ \end{proof}
+
+ \begin{lemma}\label{1.2.2}
+     If $S,T \subseteq V$, then:
+        \begin{enumerate}[label=(\arabic*)]
+            \item $S \subseteq T$ implies  $\Span{S} \subseteq \Span{T}$.
+
+            \item $\Span{(S \cup T)}=\Span{S}+\Span{T}$.
+
+            \item $\Span{(\Span{S})}=\Span{S}$.
+        \end{enumerate}
+ \end{lemma}
+ \begin{proof}
+     \begin{enumerate}[label=(\arabic*)]
+         \item Let $v \in \Span{S}$, then $v=\lambda_1v_1+\dots+\lambda_nv_n$,
+             with $v_1, \dots, v_n \in S$. Since $S \subseteq T$, $v_1, \dots,
+             v_n \in T$, hence $v \in \Span{T}$.
+
+         \item Let $v \in \Span{(S \cup T)}$, then
+             $v=\lambda_1v_1+\dots+\lambda_nv_n+\mu_1w_1+\dots+\mu_mw_m=
+             (\lambda_1v_1+\dots+\lambda_nv_n)+(\mu_1w_1+\dots+\mu_mw_m)$, where
+             $v_i \in S$ and  $w_j \in T$. Then  $v \in \Span{S}+\Span{T}$.
+
+             Now for $v \in \Span{S}+\Span{T}$, $v=u+w$ with  $u \in \Span{S}$
+             and $w \in \Span{T}$, hence $v$ is a linear combination of the
+             finite set  $\{u_1, \dots, u_n,w_1, \dots, w_n\}$ of elements of $S
+             \cup T$, hence  $v \in \Span{(S \cup T)}$.
+
+         \item Clearly $\Span{S} \in \Span{(\Span{S})}$. Suppose then that $v
+             \in \Span{(\Span{S})}$. Then $v=\alph a_1v_1+\dots+\alpha_nv_n$
+             where $v_i=\beta_{i1}v_{i1}+\dots+\beta_{im}v_{im}$ where $v_{ij}
+             \in S$. Hence $v=((\alpha_1\beta_{11})v_{11}+\dots+(\alpha_1\beta_{1m})v_{1m})+\dots+
+             (\alpha_n\beta_{n1})v_{n1}+\dots+(\alpha_n\beta_{nm})v_{nm}$.
+             Therefore $\Span(\Span{S}) \subseteq \Span{S}$.
+     \end{enumerate}
+\end{proof}
+
+\begin{definition}
+    We call a vector space $V$ over a field  $F$ \textbf{finite dimensional}
+    over $F$ of there is a finite subset  $S \subseteq V$ whose linear span is
+    $V$; that is  $\Span{S}=V$.
+\end{definition}
+
+\begin{example}
+    $F^n$ is finite dimensional. Let
+    $S=\{(1,0,\dots,0),(0,1,\dots,0),\dots,(0,0,\dots,1)\}$. Then
+    $\Span{S}=F^n$.
+\end{example} 
+
+\begin{definition}
+    Let $V$ be a vector space over a field $F$. We say that a set of $\{v_1, \dots, v_n\}$ of
+    elements of $V$  \textbf{linearly dependent} over $F$ if there exist
+    $\lambda_1,\dots, \lambda_n \in F$, not all $0$ such that
+    $\lambda_1v_1+\dots+\lambda_nv_n=0$. We call $\{v_1, \dots v_n\}$
+    \textbf{linearly independent} over $F$ if it is not linearly dependent over
+    $F$; that is  $\lambda_1v_1+\dots+\lambda_nv_n=0$ implies $\lambda_1= \dots
+    =\lambda__n=0$.
+\end{definition}
+
+\begin{example}
+    \begin{enumerate}[label=(\arabic*)]
+        \item In $F^3$, the vectors  $(1,0,0)$, $(0,1,0)$, $(0,0,1)$ are linearly
+        independent, where as $(1,1,0)$, $3,1,3$,  $(5,3,3)$ are linearly dependent.
+
+    \item Consider the set $\C$ of  complex numbets as a vector space over
+        $\R$. The vectors  $1,i$ are linearly independent over  $\R$ since  $i
+        \notin \R$. However,  $1,i$ is not linearly independent over  $\C$, as
+        $i^2+1=0$ by definition; where  $\lambda_1=i$ and $\lambda_2=1$.
+    \end{enumerate}
+\end{example}
+
+\begin{lemma}\label{1.2.3}
+    If $v_1, \dots, v_n \in V$ are linearly independent, then every element in
+    $\Span{\{v_1, \dots, v_n\}}$ can be represented unqiuely as a linear
+    combination of $ v_1, \dots, v_n$.
+\end{lemma}
+\begin{proof}
+    Let $v \in \Span{\{v_1, \dots, v_n\}}$ such that
+    $v=\lambda_1v_1+\dots+\lambda_nv_n$ and $v=\mu_1v_1+\dots+\mu_nv_n$. Then
+    $\lambda_1v_1+\dots+\lambda_nv_n=\mu_1v_1+\dots+\mu_nv_n$, then
+    $(\lambda_1-\mu_1)v_1+\dots+(\lambda_n-\mu_n)v_n$. By linear independence,
+    this implies that $\lambda_i-\mu_i=0$, for all  $1 \leq i \leq n$. Therefore
+     $v$ is uniquely represented.
+\end{proof}
+
+\begin{theorem}\label{1.2.4}
+    If $ v_1, \dots, v_n \in V$, then they are linearly independent, or $v_k$ is
+    a linear combination of  $ v_1, \dots, v_{k-1}$ for $1 \leq k \leq n$.
+\end{theorem}
+\begin{proof}
+    If $ v_1 ,\dots, v_n$ are linearly independent, then we are done. Now
+    suppose that they are linearly dependent, then
+    $\lambda_1v_1+\dots+\lambda_nv_n=0$ for $\lambda_1, \dots, \lambda_n$ not
+    all $0$. Let  $k$ be the largest such integer for which  $\lambda_k \neq 0$,
+    and  $\lambda_i=0$ for all  $k<i$. Then  $\lambda_1v_1+\dots+\lambda_nv_n=
+    \lambda_1v_1+\dots+\lambda_kv_k$ where $\lambda_1, \dots, \lambda_k$ are not
+    all $0$ for  $1 \leq i \leq k$. Then we have that
+    $v_k=(\lambda_k^{-1}\lambda_1)v_1+\dots+(\lambda_k^{-1}\lambda_{k-1})v_{k-1}$
+    which is a linear combination of $ v_1, \dots, v_{k-1}$.
+\end{proof}
+\begin{corollary}
+    If $ v_1, \dots, v_n \in V$ have $W$ as a linear span, and if  $ v_1, \dots,
+    v_k$ are linearly independent, then there is a linearly independent subset
+    of $\{v_1, \dots, v_n\}$ of the form $\{v_1, \dots v_k,v_{i_1}, \dots,
+    v_{i_r}\}$ which span $W$.
+\end{corollary}
+\begin{proof}
+    If $ v_1, \dots, v_n$ are linearly independent, then we are done. If not,
+    let $j$ be the smallest such integer for which  $v_j$ is a linear
+    combination of its predecessors. Since  $ v_1, \dots, v_k$ are linearly
+    independent, we get $k<j$. then consider the set  $S=\com{\{v_1, \dots,
+    v_n\}}{v_j}=\{v_1, \dots, v_k, \dots, v_{j-1},v_{j+1}, \dots, v_n\}$ which
+    has $n-1$ elements. Clearly,  $\Span{S} \subseteq W$.
+
+    Now let $w \in W$, then  $w=\lambda_1v_1+\dots+\lambda_nv_n$. Since $v_j$ is
+    a linear combination of  $ v_1, \dots, v_{j-1}$, we get that
+    $w=\lambda_1'v_1+\dots+\lambda_k'v_k+\dots+\lambda_{j-1}'v_{j-1}+\lambda_{j+1}v_{j+1}+\dots+\lambda_nv_n$
+    which makes $W \subseteq \Span{S}$.
+
+    Now if we proceed by removing all voctors which are linear combinations of
+    their predecessors, we get a set $\{v_1, \dots, v_k,v_{i_1}, \dots,
+    v_{i_r}\}$ with span $S$; by the preceding argument, we get again that
+    $W \subseteq \Span{S}$.
+\end{proof}
+\begin{corollary}
+    If $V$ is a finite dimensional vector space, then there is a finite set of
+    linearly independent vectors  $\{v_1, \dots, v_n\}$ such that $\Span{\{v_1,
+    \dots, v_n\}}=V$.
+\end{corollary}
+\begin{proof}
+    By definition, since $V$ is finite dimensional, there is a finite set of
+    vectors  $\{u_1, \dots, u_m\}$ with linear span $V$. Then by the previous
+    corollary, there is a subset  $\{v_1, \dots, v_n\}$ of linearly independent
+    vectors whose span is also $V$.
+\end{proof}
+
+\begin{definition}
+    We call a subset $S$ of a vector space  $V$ a  \textbf{basis} if $S$
+    consists of linearly independent vectors, and  $\Span{S}=V$.
+\end{definition}
+
+What the above corollary states, is that if $V$ is a finite dimensional vector
+space, and  $ u_1, \dots, u_m$ (not necessarily independent), span $V$, then  $
+u_1, \dots, u_m$ contain a basis of $V$. 
+
+\begin{example}
+    A basis need not be finite. Consider the polynomial field  $F[x]$, the set 
+    $\{1,x,x^2, \dots, x_n, \dots\}$ forms a basis of $F[x]$. However, the set
+    $\{1, x, x^2, \dots, x^n\}$ span the subspace $P_n$ of  $F[x]$.
+\end{example} 
+
+\begin{lemma}\label{1.2.5}
+    If $V$ is a finite dimensional vector space, then  $V \simeq F^n$ for some
+    $n \in \Z^+$.
+\end{lemma}
+\begin{proof}
+    By lemma \ref{1.2.3} and the above corollary, any $v \in V$ is the unique
+    combination of basis elements  $ v_1, \dots, v_n$; that is
+    $v=\lambda_1v_1+\dots+\lambda_nv_n$. Now take the map $v \rightarrow
+    (\lambda_1, \dots, \lambda_n)$ is well defined, $1-1$ by linear independence
+    and onto. Hence  $V \simeq F^n$.
+\end{proof}
+\begin{remark} 
+    In fact if $\{v_1, \dots, v_n\}$ is a basis for $V$, then  $|\{v_1, \dots,
+    v_n\}|=n$.
+\end{remark}
+
+\begin{lemma}\label{1.2.6}
+    If $ v_1, \dots, v_n \in V$ forms a basis, and $ w_1, \dots, w_m \in V$ are
+    linearly independent, then $m \leq n$. Moreover, the set $\{v_1, \dots,
+    v_n\}$ is maximally linearly independent.
+\end{lemma}
+\begin{proof}
+    For any arbitrary vector $v \in V$,  $v$ is a linear combination of  $ v_1,
+    \dots, v_n$ by lemma \ref {1.2.3}, hence $\{v_1, \dots, v_,v\}$ is linearly
+    dependent. This makes $\{v_1, \dots, v_n\}$ maximally independent.
+
+    Now $w_m \in V$ is a linear combination of  $ v_1, \dots, v_n$; moreover
+    they span $V$ by theorem \ref{1.2.4}, therefore, by the previous corollary
+    there is a subset $\{w_m,v_{i_1}, \dots, v_{i_k}\}$ with $k \leq n-1$ which
+    is a basis of  $V$.
+
+    Repeating by taking  $w_{m-1},w_m, \dots, v_{i_k}$; we get, eventually, a
+    basis $\{w_{m-1},w_m, \dots, v_{j_1}, dots, v_{j_s}\}$, with $s \leq n-1$.
+    Repeating then of the vectors  $ w_2, \dots, w_{m-2}$, we get a basis
+    $\{w_2,\dots, w_{m-1}, \dots, v_\alpha\}$. Since $ w_1, \dots, w_m$ are
+    linearly independent, $ w_1$ is not a linear combiantion of the others,
+    hence the basis contains some $v$. Now the basis above has  $m-1$  $w_i$'s,
+    at the cost of one  $v \in V$, hence  $m-1 \leq n-1$; thus  $m \leq n$.
+\end{proof}
+\begin{corollary}
+    Any two bases have the same number of elements.
+\end{corollary}
+\begin{proof}
+    Let $\{v_1, \dots, v_n\}$ and $\{w_1, \dots, w_m\}$ be bases with $n$ and
+    $m$ elements respectively. Since they are both linearly independent, by
+    above we get  $m \leq n$ and  $n 
+    \leq m$. Therefore  $m=n$.
+\end{proof}
+\begin{corollary}
+    $F^n \simeq F^m$ if and only if  $n=m$.
+\end{corollary}
+\begin{proof}
+    $F^n$ has the basis  $\{(1,0, \dots, 0)_n, \dots, (0,0, \dots, 1)_n\}$ and
+    $F^m$ has basis  $\{(1,0, \dots, 0)_m, \dots, (0,0, \dots, 1)_m\}$, and any
+    isomorphism must map a basis to a basis.
+\end{proof}
+\begin{corollary}
+    If $V$ is finite dimensional over  $F$, with  $V \simeq F^n$ for some unque
+     $n$, then  any basis in $V$ has exactly  $n$ elements.
+\end{corollary}
+
+\begin{definition}
+    If $V$ is a finite dimensional vector space over a field  $F$, with a basis
+     $\{v_1, \dots, v_n\}$ of $n$ elements, we call the $n$ \textbf{dimension} of
+     $V$ over  $F$ and write $\dim_F{V}=n$ or $\dim{V}=n$.
+\end{definition}
+
+\begin{example}
+    \begin{enumerate}[label=(\arabic*)]
+        \item $\dim{F^n}=n$.
+
+        \item $\dim_F{P_n}=n$, and $\dim{F[x]}=\infty$ (since $F[x]$) is
+            infinite dimensional.
+
+        \item $\dim_\R{\C}=2$.
+    \end{enumerate}
+\end{example} 
+
+\begin{corollary}
+    If $V$ and  $U$ are finite dimensional vector spaces over a field $F$, with
+     $\dim_F{V}=\dim_F{U}$, then $V \simeq U$.
+\end{corollary}
+\begin{proof}
+    $V \simeq F^n$ and  $F^n \simeq U$. By transitivity, we get  $V \simeq U$.
+\end{proof}
+
+\begin{lemma}\label{1.2.7}
+    If $V$ is a finite dimensional vector space over $F$ and of  $ u_1, \dots,
+    u_m \in V$ are linearly independent, then there exis $u_{m+1}, \dots,
+    u_{m+r} \in V$ such that $\{u_1, \dots, u_m, u_{m+1}, u_{m+r}\}$ is a basis
+    of $V$.
+\end{lemma}
+\begin{proof}
+    By finite dimensionality, there is a basis $ v_1, \dots, v_n$ of $V$, which
+    span  $V$. Hene  $\Span{\{u_1, \dots, u_m,v_1, \dots, v_n\}}=V$,
+    therefore by theorem \ref {1.2.4} there is a subset $\{u_1, \dots,
+    u_m,v_{i_1}, \dots, v_{i_r}\}$ which is a basis of $V$. Now just map
+    $v_{i_j} \rightarrow u_{m+j}$ for each $1 \leq j \leq r$.
+\end{proof}
+\begin{remark} 
+    This gives us a method for constructing bases of vector spaces.
+\end{remark}
+
+\begin{lemma}\label{1.2.8}
+    If $V$ is finite dimensional, and if  $W$ is a subspace of  $V$, then  $W$
+    is also finite dimensional. Moreoverm  $\dim{W} \leq \dim{V}$ and
+    $\dim{V/W}=\dim{V}-\dim{W}$.
+\end{lemma}
+\begin{proof}
+    If $\dim{V}=n$, then any set of $n+1$ vectors in $V$ is linearly dependent, by
+    maximality, hence so is any  set of $n+1$ vectors in  $W$. Then there
+    exists a maximal set of linearly independent elements in $W$,  $ w_1, \dots,
+    w_m$, with $m \leq n$. If  $w \in W$, then  $ w_1, \dots, w_m,w$ are
+    linearly dependent with $\lambda_1w_1+\dots+\lambda_mw_m+\lambda w=0$. Now
+    $\lambda \neq 0$, for that would imply $ w_1, \dots, w_n, w$ linearly
+    independent. Hence $w=\mu_1w_1+\dots+\mu_mw_m$ where
+    $\mu_i=\lambda^{-1}\lambda_i$. Thus we get $w \in \Span{\{w_1, \dots,
+    w_m\}}$, i.e. $W=\Span{\{w_1, \dots, w_m\}}$, thus $ w_1, \dots w_m$ form a
+    basis of $W$. Therefore  $m=\dim{W} \leq \dim{V}=n$.
+
+    Now take $V \rightarrow V/W$ by $ v_1, \dots, v_r \rightarrow v_1', \dots,
+    v_r'$. By lemma \ref{1.2.7}, if $\{w_1, \dots, w_m\}$ form a basis of $W$,
+    then there exist  $v_{m+1}, \dots, v_{m+r}$ such that $\{w_1, \dots,
+    wm,v_{m+1}, v_{m+r}\}$ form a basis for $V$. That is, for any  $v \in V$,
+    $v=\lambda_1w_1+\dots+\lambda_mw_m+\mu_1v_1+\dots+\mu_rv_r$. Then we get
+    that $v'=\mu_1v_1'+\dots+\mu_rv_r'$, hence $\Span{\{v_1', \dots,
+    v_r'\}}=V/W$. Now if $\gamma_1v_1'+\dots+\gamma_rv_r'=0$, then
+    $\gamma_1v_1'+\dots+\gamma_rv_r \in W$, making
+    $\gamma_1v_1'+\dots+\gamma_rv_r=\lambda_1w_1+\dots+\lambda_mv_m$. By linear
+    independence, $\gamma_i, \lambda_j=0$ for all  $1 \leq i \leq r$ and  $1
+    \leq j \leq m$. This  $V/M$ has a basis of $r=\dim{V}-\dim{W}$ elements.
+    Therefore $\dim{V/W}=\dim{v}-\dim{W}$.
+\end{proof}
+\begin{corollary}
+    If $U$ and  $W$ are finite dimensional subspaces of a vector space  $V$,
+    then  $U+W$ is finite dimensional, and  $\dim(A+B)=\dim{A}+\dim{B}-\dim_A
+    \cap B$.
+\end{corollary}
+\begin{proof}
+    We have $U+W/W \simeq U/U \cap W$. Hence we get that
+    $\dim{U+W/W}=\dim{(U+W)}-\dim{W}=\dim{U/U \cap W}=\dim{U}-\dim{U \cap W}$.
+    Then $\dim(U+W)=\dim{W}=\dim{U}-\di m_9U \cap W$.
+\end{proof}
