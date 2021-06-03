@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1622564618 "ringTheory.tex" "ringTheory.pdf" "ringTheory" 1622564618
+["pdflatex"] 1622743247 "ringTheory.tex" "ringTheory.pdf" "ringTheory" 1622743247
   "/etc/texmf/web2c/texmf.cnf" 1618635463 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -219,15 +219,16 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1618635720 1283511 bc6bf3d748e8c9234f67caaeb2488ea3 ""
   "Chapters/Chapter1/Section1/section1.tex" 1621977153 11794 cfa4320570fe6bdd822c7a3942bd8e7c ""
   "Chapters/Chapter1/Section2/section2.tex" 1622564555 15387 551204ad5fe3484db2a818496c28a803 ""
-  "Chapters/Chapter1/Section3/section3.tex" 1622564605 235 e1755577e40dda377a01916993c9636f ""
-  "Chapters/Chapter1/chapter1.tex" 1622564617 643 a354c18116e79426b9de2785c4232aa5 ""
+  "Chapters/Chapter1/Section3/section3.tex" 1622743204 10236 5afb975dd4d533a2d71f8d18845c0e21 ""
+  "Chapters/Chapter1/Section4/section4.tex" 1622743237 244 dfde7948fc3953531b0161d58da48126 ""
+  "Chapters/Chapter1/chapter1.tex" 1622743246 642 f9d70ef3198db2abecddb3b8b4aa4dcd ""
   "Library/Fonts/BlackboardBold.tex" 1621899825 744 e62bfb97c3b0ebe0a2353762b95933da ""
   "Library/Fonts/MathCalligraphy.tex" 1621899825 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "ringTheory.aux" 1622564611 2296 322925d718e9cf79aaa7451741f8d155 "pdflatex"
-  "ringTheory.out" 1622564611 246 4820579db7bbfa8a0a856d3c023838bd "pdflatex"
-  "ringTheory.tex" 1622557080 2028 c16b677a7056c6010d470e46803bc5d4 ""
+  "ringTheory.aux" 1622743205 2688 01899c990d8acce3467db3b8968a55c4 "pdflatex"
+  "ringTheory.out" 1622743205 246 4820579db7bbfa8a0a856d3c023838bd "pdflatex"
+  "ringTheory.tex" 1622738371 2062 7a131c180e230e2a3e89249c2dab943a ""
   (generated)
-  "ringTheory.aux"
-  "ringTheory.pdf"
   "ringTheory.out"
+  "ringTheory.pdf"
   "ringTheory.log"
+  "ringTheory.aux"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.4.17)  1 JUN 2021 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.4.17)  3 JUN 2021 14:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -628,22 +628,22 @@ LaTeX Warning: Label `section1' multiply defined.
 )
 \openout1 = `ringTheory.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -700,7 +700,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.17} (current compat level: 1.12).
 
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 68.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -710,18 +710,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
  (./ringTheory.out) (./ringTheory.out)
 \@outlinefile=\write4
 \openout4 = `ringTheory.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -867,26 +867,688 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./Chapters/Chapter1/Section3/section3.tex)) [10] (./ringTheory.aux)
+) (./Chapters/Chapter1/Section3/section3.tex
+Overfull \hbox (69.66264pt too wide) in paragraph at lines 48--59
+\OT1/cmr/m/n/12 that $[] [] = [](\OML/cmm/m/it/12 V; W\OT1/cmr/m/n/12 )$. Now sup-pose for $\OML/cmm/m/it/12 ^^L[]; [] ; ^^L[]; [] ; ^^L[]; [] ; ^^L[] \OMS/cmsy/m/n/12 2
+ []
+
+[10]
+
+LaTeX Warning: Command \^ invalid in math mode on input line 80.
+
+./Chapters/Chapter1/Section3/section3.tex:80: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.80     there is a linear functional  $\^v
+                                            \in \dual{V}$ such that $\^v(v) ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:80: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.80     there is a linear functional  $\^v
+                                            \in \dual{V}$ such that $\^v(v) ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 80.
+
+./Chapters/Chapter1/Section3/section3.tex:80: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.80 ...ctional  $\^v \in \dual{V}$ such that $\^v
+                                                  (v) \neq 0$.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:80: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.80 ...ctional  $\^v \in \dual{V}$ such that $\^v
+                                                  (v) \neq 0$.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 83.
+
+./Chapters/Chapter1/Section3/section3.tex:83: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.83 ...ts, v_n\}$ be a bases of $V$ and let  $\^v
+                                                  _i \in \dual{V}$ be
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:83: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.83 ...ts, v_n\}$ be a bases of $V$ and let  $\^v
+                                                  _i \in \dual{V}$ be
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 84.
+
+./Chapters/Chapter1/Section3/section3.tex:84: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.84     defined by $\^v
+                        _i(v_j)=0$ whenerver $i \neq j$ and  $\^v_ i(v_j)=1$
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:84: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.84     defined by $\^v
+                        _i(v_j)=0$ whenerver $i \neq j$ and  $\^v_ i(v_j)=1$
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 84.
+
+./Chapters/Chapter1/Section3/section3.tex:84: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.84 ...v_i(v_j)=0$ whenerver $i \neq j$ and  $\^v
+                                                  _ i(v_j)=1$
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:84: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.84 ...v_i(v_j)=0$ whenerver $i \neq j$ and  $\^v
+                                                  _ i(v_j)=1$
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 86.
+
+./Chapters/Chapter1/Section3/section3.tex:86: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.86     $\^v
+             _i(v)=\lambda_i$. Then $\{\^v_i, \dots, \^v_n\}$ forms a basis of
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:86: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.86     $\^v
+             _i(v)=\lambda_i$. Then $\{\^v_i, \dots, \^v_n\}$ forms a basis of
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 86.
+
+./Chapters/Chapter1/Section3/section3.tex:86: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.86     $\^v_i(v)=\lambda_i$. Then $\{\^v
+                                          _i, \dots, \^v_n\}$ forms a basis of
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:86: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.86     $\^v_i(v)=\lambda_i$. Then $\{\^v
+                                          _i, \dots, \^v_n\}$ forms a basis of
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 86.
+
+./Chapters/Chapter1/Section3/section3.tex:86: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.86 ...i(v)=\lambda_i$. Then $\{\^v_i, \dots, \^v
+                                                  _n\}$ forms a basis of
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:86: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.86 ...i(v)=\lambda_i$. Then $\{\^v_i, \dots, \^v
+                                                  _n\}$ forms a basis of
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 89.
+
+./Chapters/Chapter1/Section3/section3.tex:89: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.89     $\^v
+             _1(v_1)=\^v_1(v)=1$.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:89: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.89     $\^v
+             _1(v_1)=\^v_1(v)=1$.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 89.
+
+./Chapters/Chapter1/Section3/section3.tex:89: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.89     $\^v_1(v_1)=\^v
+                        _1(v)=1$.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:89: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.89     $\^v_1(v_1)=\^v
+                        _1(v)=1$.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 95.
+
+./Chapters/Chapter1/Section3/section3.tex:95: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.95     basis of linear functionals $\{\^v
+                                           _1, \dots, \^v_n\}$ of $\dual{V}$...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:95: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.95     basis of linear functionals $\{\^v
+                                           _1, \dots, \^v_n\}$ of $\dual{V}$...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 95.
+
+./Chapters/Chapter1/Section3/section3.tex:95: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.95 ...of linear functionals $\{\^v_1, \dots, \^v
+                                                  _n\}$ of $\dual{V}$ such
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:95: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.95 ...of linear functionals $\{\^v_1, \dots, \^v
+                                                  _n\}$ of $\dual{V}$ such
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 96.
+
+./Chapters/Chapter1/Section3/section3.tex:96: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.96     that $\^v
+                  _i(v_j)=0$ wheberver $i \neq j$ and  $\^v_i(v_i)=1$ otherw...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:96: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.96     that $\^v
+                  _i(v_j)=0$ wheberver $i \neq j$ and  $\^v_i(v_i)=1$ otherw...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 96.
+
+./Chapters/Chapter1/Section3/section3.tex:96: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.96 ...v_i(v_j)=0$ wheberver $i \neq j$ and  $\^v
+                                                  _i(v_i)=1$ otherwise.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:96: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.96 ...v_i(v_j)=0$ wheberver $i \neq j$ and  $\^v
+                                                  _i(v_i)=1$ otherwise.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+./Chapters/Chapter1/Section3/section3.tex:109: Double subscript.
+l.109 ...and $\alpha,\beta \in F$, we have  $T_ v_
+                                                  0(\alpha T+\beta
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./Chapters/Chapter1/Section3/section3.tex:110: Double subscript.
+l.110 ...L)=\alpha T(v_0)+\beta L(v_0)=\alpha T_v_
+                                                  0(T)+\beta T_v_0(L)$, whic...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./Chapters/Chapter1/Section3/section3.tex:110: Double subscript.
+l.110 ...)+\beta L(v_0)=\alpha T_v_0(T)+\beta T_v_
+                                                  0(L)$, which makes
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./Chapters/Chapter1/Section3/section3.tex:111: Double subscript.
+l.111     $T_v_
+               0 \in \dual(\dual{V})$.
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 132.
+
+./Chapters/Chapter1/Section3/section3.tex:132: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.132 Let $\~T
+               \in \dual{W}$ such that $\~T(w)=T(w)$ for any $w \in W$; wher...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:132: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.132 Let $\~T
+               \in \dual{W}$ such that $\~T(w)=T(w)$ for any $w \in W$; wher...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 132.
+
+./Chapters/Chapter1/Section3/section3.tex:132: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.132 Let $\~T \in \dual{W}$ such that $\~T
+                                           (w)=T(w)$ for any $w \in W$; wher...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:132: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.132 Let $\~T \in \dual{W}$ such that $\~T
+                                           (w)=T(w)$ for any $w \in W$; wher...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 134.
+
+./Chapters/Chapter1/Section3/section3.tex:134: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.134 \rightarrow \~T
+                     $. Then we see that $A(W)=\ker{\psi}$, which makes it a...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:134: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.134 \rightarrow \~T
+                     $. Then we see that $A(W)=\ker{\psi}$, which makes it a...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 143.
+
+./Chapters/Chapter1/Section3/section3.tex:143: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.143     \rightarrow \~T
+                         $, where $\~T(w)=T(w)$ for all $w \in W$; and recal...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:143: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.143     \rightarrow \~T
+                         $, where $\~T(w)=T(w)$ for all $w \in W$; and recal...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 143.
+
+./Chapters/Chapter1/Section3/section3.tex:143: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.143     \rightarrow \~T$, where $\~T
+                                      (w)=T(w)$ for all $w \in W$; and recal...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:143: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.143     \rightarrow \~T$, where $\~T
+                                      (w)=T(w)$ for all $w \in W$; and recal...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no ç in font cmex10!
+[11]
+
+./Chapters/Chapter1/Section3/section3.tex:180: Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180             \end{align*}
+                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 190.
+
+./Chapters/Chapter1/Section3/section3.tex:190: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.190     of $F^n$ and let  $\{\^v
+                                  _1, \dots, \^v_n\}$ be its dual basis. The...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:190: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.190     of $F^n$ and let  $\{\^v
+                                  _1, \dots, \^v_n\}$ be its dual basis. The...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 190.
+
+./Chapters/Chapter1/Section3/section3.tex:190: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.190     of $F^n$ and let  $\{\^v_1, \dots, \^v
+                                                _n\}$ be its dual basis. The...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:190: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.190     of $F^n$ and let  $\{\^v_1, \dots, \^v
+                                                _n\}$ be its dual basis. The...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 191.
+
+./Chapters/Chapter1/Section3/section3.tex:191: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.191     \dual{F^n}$ has the form $T=x_1\^v
+                                            _1+\dots+x_n\^v_n$, with $x_i \i...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:191: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.191     \dual{F^n}$ has the form $T=x_1\^v
+                                            _1+\dots+x_n\^v_n$, with $x_i \i...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 191.
+
+./Chapters/Chapter1/Section3/section3.tex:191: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.191 ...n}$ has the form $T=x_1\^v_1+\dots+x_n\^v
+                                                  _n$, with $x_i \in F$. for
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:191: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.191 ...n}$ has the form $T=x_1\^v_1+\dots+x_n\^v
+                                                  _n$, with $x_i \in F$. for
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 195.
+
+./Chapters/Chapter1/Section3/section3.tex:195: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.195     a_{1n})=(x_1\^v
+                         _1+\dots+x_n\^v_n)(a_{11}, \dots,
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:195: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.195     a_{1n})=(x_1\^v
+                         _1+\dots+x_n\^v_n)(a_{11}, \dots,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 195.
+
+./Chapters/Chapter1/Section3/section3.tex:195: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.195     a_{1n})=(x_1\^v_1+\dots+x_n\^v
+                                        _n)(a_{11}, \dots,
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:195: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.195     a_{1n})=(x_1\^v_1+\dots+x_n\^v
+                                        _n)(a_{11}, \dots,
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 196.
+
+./Chapters/Chapter1/Section3/section3.tex:196: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.196 ...})=a_{11}x_1+\dots+a_{1n}x_n$, since $\^v
+                                                  _i(v_j)=0$ for $i \neq j$.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:196: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.196 ...})=a_{11}x_1+\dots+a_{1n}x_n$, since $\^v
+                                                  _i(v_j)=0$ for $i \neq j$.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 198.
+
+./Chapters/Chapter1/Section3/section3.tex:198: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.198     $x_1\^v
+                 _1+\dots+x_n\^v_n$ in $A(U)$. Therefore, the number of line...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:198: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.198     $x_1\^v
+                 _1+\dots+x_n\^v_n$ in $A(U)$. Therefore, the number of line...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 198.
+
+./Chapters/Chapter1/Section3/section3.tex:198: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.198     $x_1\^v_1+\dots+x_n\^v
+                                _n$ in $A(U)$. Therefore, the number of line...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./Chapters/Chapter1/Section3/section3.tex:198: You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.198     $x_1\^v_1+\dots+x_n\^v
+                                _n$ in $A(U)$. Therefore, the number of line...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+) (./Chapters/Chapter1/Section4/section4.tex)) [12] (./ringTheory.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `ringTheory.out' has not changed.
-(rerunfilecheck)             Checksum: 4820579DB7BBFA8A0A856D3C023838BD;246.
+
+Package rerunfilecheck Warning: File `ringTheory.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ringTheory.out':
+(rerunfilecheck)             Before: 4820579DB7BBFA8A0A856D3C023838BD;246
+(rerunfilecheck)             After:  594F311C417627EE25724DD68E4BBBF0;313.
  ) 
 Here is how much of TeX's memory you used:
- 29252 strings out of 481252
- 693014 string characters out of 5915888
- 1098530 words of memory out of 5000000
- 45586 multiletter control sequences out of 15000+600000
+ 29277 strings out of 481252
+ 693352 string characters out of 5915888
+ 1098817 words of memory out of 5000000
+ 45597 multiletter control sequences out of 15000+600000
  413498 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  102i,9n,103p,736b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ringTheory.pdf (10 pages, 189942 bytes).
+Output written on ringTheory.pdf (12 pages, 205577 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 192 compressed objects within 2 object streams
+ 74 named destinations out of 1000 (max. 500000)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
