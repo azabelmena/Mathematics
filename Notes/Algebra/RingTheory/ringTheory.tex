@@ -1,21 +1,24 @@
-\documentclass[12pt]{book}
- 
+\documentclass[12pt, twoside]{book}
+
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{verbatim}
 \usepackage{pgfplots}
     \pgfplotsset{compat=1.12,}
-\usepackage{enumitem}
 \usepackage{amsmath,amsfonts,amsthm,amssymb,graphicx,mathtools,hyperref}
-\usepackage{wrapfig}
-\usepackage[export]{adjustbox}
-\usepackage{tikz}
+\usepackage[italicdiff]{physics}
+\usepackage{tikz, tikz-cd}
+\usepackage{graphicx}
+%\usepackage[backend = biber]{biblatex}
+%\addbibresource{references.bib}
+%\nocite{*}
 \renewcommand\qedsymbol{$\blacksquare$}
+\renewcommand{\bar}[1]{\overline{#1}}
 \usetikzlibrary{positioning}
-\input{Library/Fonts/BlackboardBold}
-\input{Library/Fonts/MathCalligraphy}
+\input{Library/Fonts/BlackboardBold.tex}
+\input{Library/Fonts/MathCalligraphy.tex}
 \newcommand{\ita}[1]{\textit{#1}}
-\newcommand{\com}[2]{#1\backslash#2}
+\newcommand{\com}[2]{#1 \backslash #2}
 \newcommand{\oneton}{\{1,2,3,...,n\}}
 \newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
 \newcommand\ef{\ita{f} }
@@ -25,18 +28,21 @@
 \newcommand\setb[1]{\{#1\}}
 \newcommand\en{\ita{n }}
 \newcommand{\vbrack}[1]{\langle #1\rangle}
+\renewcommand{\bbar}[1]{\underline{#1}}
+\renewcommand{\bar}[1]{\overline{#1}}
 \DeclareMathOperator{\ord}{ord}
-\DeclareMathOperator{\Hom}{hom}
-\DeclareMathOperator{\ker}{ker}
-\DeclareMathOperator{\deg}{deg}
-\DeclareMathOperator{\dim}{dim}
-\DeclareMathOperator{\Span}{span}
-\DeclareMathOperator{\dual}{dual}
+\DeclareMathOperator{\Int}{Int}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
+\newtheorem{axiom}{Axiom}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{postulate}{Postulate}
 \newtheorem*{corollary}{Corollary}
 
 \theoremstyle{plain} % just in case the style had changed
@@ -59,10 +65,11 @@
 \newtheorem*{note}{Note}
 
 \renewcommand*{\proofname}{Proof}
- 
+
+
+
 \title{Ring Theory}
-\author{Alec Zabel-Mena\\ \textbf{\underline{Text}} \\  
-Herstein (1965). Topics in Algebra. Blaisdel Publishing Co.}
+\author{Alec Zabel-Mena}
 \date{\today}
 
 \begin{document}
@@ -70,5 +77,7 @@ Herstein (1965). Topics in Algebra. Blaisdel Publishing Co.}
 \maketitle
 
 \input{Chapters/Chapter1/chapter1.tex}
+
+%\printbibliography
 
 \end{document}
