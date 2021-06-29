@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.6.28)  28 JUN 2021 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.6.28)  29 JUN 2021 09:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,25 +906,28 @@ LaTeX Warning: Label `1.3.4' multiply defined.
 
 LaTeX Warning: Label `section1' multiply defined.
 
+
+LaTeX Warning: Label `section1' multiply defined.
+
 )
 \openout1 = `ringTheory.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -981,7 +984,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.17} (current compat level: 1.12).
 
-Package hyperref Info: Link coloring OFF on input line 75.
+Package hyperref Info: Link coloring OFF on input line 72.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -991,9 +994,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count321
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
  (./ringTheory.out) (./ringTheory.out)
 \@outlinefile=\write4
 \openout4 = `ringTheory.out'.
@@ -1003,17 +1006,17 @@ LaTeX Info: Redefining \nameref on input line 75.
 ] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 
+l.75 
       [1] (./Chapters/Chapter1/chapter1.texpdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1464,68 +1467,6 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ) (./Chapters/Chapter1/Section2/section2.tex
-./Chapters/Chapter1/Section2/section2.tex:18: Undefined control sequence.
-<recently read> \Span 
-                      
-l.18 ...f{linear span} of $S$; and we write $\Span
-                                                  {S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:23: Undefined control sequence.
-<recently read> \Span 
-                      
-l.23      $\Span
-                {S}$ is a subspace of $V$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:26: Undefined control sequence.
-<recently read> \Span 
-                      
-l.26      Since $\Span
-                      {S}$ is the set of all linear combinations of finite s...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:27: Undefined control sequence.
-<recently read> \Span 
-                      
-l.27 ... elements of $S$, it is clear that  $\Span
-                                                  {S} \subseteq V$. Now let ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:28: Undefined control sequence.
-l.28      \Span
-               {S}$, then $v=\lambda_1v_1+ \dots+\lambda_nv_n$ and
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:35: Undefined control sequence.
-l.35      \Span
-               {S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 ./Chapters/Chapter1/Section2/section2.tex:40: Missing number, treated as zero.
 <to be read again> 
                    \c@* 
@@ -1571,26 +1512,6 @@ l.41             \item $
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./Chapters/Chapter1/Section2/section2.tex:41: Undefined control sequence.
-<recently read> \Span 
-                      
-l.41 ...     \item $S \subseteq T$ implies  $\Span
-                                                  {S} \subseteq \Span{T}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:41: Undefined control sequence.
-l.41 ...eteq T$ implies  $\Span{S} \subseteq \Span
-                                                  {T}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 ./Chapters/Chapter1/Section2/section2.tex:43: LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -1627,35 +1548,6 @@ l.43             \item $
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./Chapters/Chapter1/Section2/section2.tex:43: Undefined control sequence.
-<recently read> \Span 
-                      
-l.43             \item $\Span
-                             {(S \cup T)}=\Span{S}+\Span{T}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:43: Undefined control sequence.
-l.43             \item $\Span{(S \cup T)}=\Span
-                                               {S}+\Span{T}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:43: Undefined control sequence.
-l.43 ...   \item $\Span{(S \cup T)}=\Span{S}+\Span
-                                                  {T}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 ./Chapters/Chapter1/Section2/section2.tex:45: LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -1691,35 +1583,6 @@ l.45             \item $
                         \Span{(\Span{S})}=\Span{S}$.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
-
-./Chapters/Chapter1/Section2/section2.tex:45: Undefined control sequence.
-<recently read> \Span 
-                      
-l.45             \item $\Span
-                             {(\Span{S})}=\Span{S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:45: Undefined control sequence.
-l.45             \item $\Span{(\Span
-                                    {S})}=\Span{S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:45: Undefined control sequence.
-l.45             \item $\Span{(\Span{S})}=\Span
-                                               {S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
 ./Chapters/Chapter1/Section2/section2.tex:46: LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -1733,6 +1596,11 @@ l.46         \end{enumerate}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+
+Overfull \hbox (26.50197pt too wide) in paragraph at lines 40--46
+[]\OT1/cmr/m/it/12 [label=(0)][]$\OML/cmm/m/it/12 S \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 T$ \OT1/cmr/m/it/12 im-plies $[] \OML/cmm/m/it/12 S \OMS/cmsy/m/n/12 ^^R [] \OML/cmm/m/it/12 T$\OT1/cmr/m/it/12 . [][]$[] [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 S \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 T$\OT1/cmr/m/it/12 . [][]$[] [] \OT1/cmr/m/n/12 =
+ []
+
 ./Chapters/Chapter1/Section2/section2.tex:49: Missing number, treated as zero.
 <to be read again> 
                    \c@* 
@@ -1742,143 +1610,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./Chapters/Chapter1/Section2/section2.tex:50: Undefined control sequence.
-l.50          \item Let $v \in \Span
-                                    {S}$, then $v=\lambda_1v_1+\dots+\lambda...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:52: Undefined control sequence.
-l.52              v_n \in T$, hence $v \in \Span
-                                                {T}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:54: Undefined control sequence.
-l.54          \item Let $v \in \Span
-                                    {(S \cup T)}$, then
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:57: Undefined control sequence.
-l.57 ...in S$ and  $w_j \in T$. Then  $v \in \Span
-                                                  {S}+\Span{T}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:57: Undefined control sequence.
-l.57 ...  $w_j \in T$. Then  $v \in \Span{S}+\Span
-                                                  {T}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:59: Undefined control sequence.
-l.59              Now for $v \in \Span
-                                      {S}+\Span{T}$, $v=u+w$ with  $u \in \S...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:59: Undefined control sequence.
-l.59              Now for $v \in \Span{S}+\Span
-                                               {T}$, $v=u+w$ with  $u \in \S...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:59: Undefined control sequence.
-l.59 ...n{S}+\Span{T}$, $v=u+w$ with  $u \in \Span
-                                                  {S}$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:60: Undefined control sequence.
-l.60              and $w \in \Span
-                                  {T}$, hence $v$ is a linear combination of...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:62: Undefined control sequence.
-l.62              \cup T$, hence  $v \in \Span
-                                              {(S \cup T)}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:64: Undefined control sequence.
-<recently read> \Span 
-                      
-l.64          \item Clearly $\Span
-                                  {S} \in \Span{(\Span{S})}$. Suppose then t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:64: Undefined control sequence.
-l.64          \item Clearly $\Span{S} \in \Span
-                                               {(\Span{S})}$. Suppose then t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:64: Undefined control sequence.
-l.64 ...  \item Clearly $\Span{S} \in \Span{(\Span
-                                                  {S})}$. Suppose then that $v
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:65: Undefined control sequence.
-l.65              \in \Span
-                           {(\Span{S})}$. Then $v=\alph a_1v_1+\dots+\alpha_...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:65: Undefined control sequence.
-l.65              \in \Span{(\Span
-                                  {S})}$. Then $v=\alph a_1v_1+\dots+\alpha_...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+[6]
 ./Chapters/Chapter1/Section2/section2.tex:65: Missing number, treated as zero.
 <to be read again> 
                    \c@a 
@@ -1887,58 +1619,6 @@ l.65 ...   \in \Span{(\Span{S})}$. Then $v=\alph a
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
-
-./Chapters/Chapter1/Section2/section2.tex:69: Undefined control sequence.
-<recently read> \Span 
-                      
-l.69              Therefore $\Span
-                                  (\Span{S}) \subseteq \Span{S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:69: Undefined control sequence.
-l.69              Therefore $\Span(\Span
-                                        {S}) \subseteq \Span{S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:69: Undefined control sequence.
-l.69 ...Therefore $\Span(\Span{S}) \subseteq \Span
-                                                  {S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[6]
-./Chapters/Chapter1/Section2/section2.tex:76: Undefined control sequence.
-<recently read> \Span 
-                      
-l.76     $V$; that is  $\Span
-                             {S}=V$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:82: Undefined control sequence.
-<recently read> \Span 
-                      
-l.82     $\Span
-               {S}=F^n$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (0.37639pt too wide) in paragraph at lines 80--83
@@ -1975,84 +1655,17 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./Chapters/Chapter1/Section2/section2.tex:109: Undefined control sequence.
-<recently read> \Span 
-                      
-l.109     $\Span
-                {\{v_1, \dots, v_n\}}$ can be represented unqiuely as a linear
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./Chapters/Chapter1/Section2/section2.tex:113: Undefined control sequence.
-l.113     Let $v \in \Span
-                          {\{v_1, \dots, v_n\}}$ such that
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Overfull \hbox (21.46074pt too wide) in paragraph at lines 108--111
+[][]\OT1/cmr/bx/n/12 Lemma 1.2.3. []\OT1/cmr/m/it/12 If $\OML/cmm/m/it/12 v[]; [] ; v[] \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 V$ \OT1/cmr/m/it/12 are lin-early in-de-pen-dent, then ev-ery el-e-ment in $[] []$
+ []
 
 
 Overfull \hbox (16.6028pt too wide) in paragraph at lines 137--141
 \OT1/cmr/m/it/12 dent, then there is a lin-early in-de-pen-dent sub-set of $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 v[]; [] ; v[]\OMS/cmsy/m/n/12 g$ \OT1/cmr/m/it/12 of the form $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 v[]; [] v[]; v[]; [] ; v[]\OMS/cmsy/m/n/12 g$
  []
 
-./Chapters/Chapter1/Section2/section2.tex:148: Undefined control sequence.
-<recently read> \Span 
-                      
-l.148     has $n-1$ elements. Clearly,  $\Span
-                                              {S} \subseteq W$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:153: Undefined control sequence.
-l.153     which makes $W \subseteq \Span
-                                        {S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [7]
-./Chapters/Chapter1/Section2/section2.tex:158: Undefined control sequence.
-l.158     $W \subseteq \Span
-                            {S}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:162: Undefined control sequence.
-<recently read> \Span 
-                      
-l.162 ...s  $\{v_1, \dots, v_n\}$ such that $\Span
-                                                  {\{v_1,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:174: Undefined control sequence.
-<recently read> \Span 
-                      
-l.174 ...linearly independent vectors, and  $\Span
-                                                  {S}=V$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
 Overfull \hbox (28.94862pt too wide) in paragraph at lines 218--225
 []\OT1/cmr/m/n/12 Repeating by tak-ing $\OML/cmm/m/it/12 w[]; w[]; [] ; v[]$\OT1/cmr/m/n/12 ; we get, even-tu-ally, a ba-sis $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 w[]; w[]; [] ; v[]; dots; v[]\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ,
  []
@@ -2072,50 +1685,10 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./Chapters/Chapter1/Section2/section2.tex:281: Undefined control sequence.
-<recently read> \Span 
-                      
-l.281     span  $V$. Hene  $\Span
-                                 {\{u_1, \dots, u_m,v_1, \dots, v_n\}}=V$,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (18.58562pt too wide) in paragraph at lines 280--285
-[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 V$\OT1/cmr/m/n/12 , there-fore by the-o-rem []1.2.4[] there is a sub-set $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 u[]; [] ; u[]; v[]; [] ; v[]\OMS/cmsy/m/n/12 g$
+Overfull \hbox (44.15062pt too wide) in paragraph at lines 280--285
+[] [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 V$\OT1/cmr/m/n/12 , there-fore by the-o-rem []1.2.4[] there is a sub-set $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 u[]; [] ; u[]; v[]; [] ; v[]\OMS/cmsy/m/n/12 g$
  []
-
-./Chapters/Chapter1/Section2/section2.tex:303: Undefined control sequence.
-l.303 ...^{-1}\lambda_i$. Thus we get $w \in \Span
-                                                  {\{w_1, \dots,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:304: Undefined control sequence.
-l.304     w_m\}}$, i.e. $W=\Span
-                                {\{w_1, \dots, w_m\}}$, thus $ w_1, \dots w_...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section2/section2.tex:312: Undefined control sequence.
-<recently read> \Span 
-                      
-l.312 ...=\mu_1v_1'+\dots+\mu_rv_r'$, hence $\Span
-                                                  {\{v_1', \dots,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 [9]
 ./Chapters/Chapter1/Section2/section2.tex:328: Undefined control sequence.
@@ -2127,74 +1700,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./Chapters/Chapter1/Section3/section3.tex
-./Chapters/Chapter1/Section3/section3.tex:61: Undefined control sequence.
-<recently read> \Span 
-                      
-l.61     the $T_{ij}$, we get that $\Span
-                                         {\{T_{11}, \dots, T_{1n}, \dots, T_...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[10]
-./Chapters/Chapter1/Section3/section3.tex:82: Undefined control sequence.
-<recently read> \dual 
-                      
-l.82 ...f{dual space} of $V$ and denote it  $\dual
-                                                  {V}$. We
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:83: Undefined control sequence.
-<recently read> \dual 
-                      
-l.83     call elements of $\dual
-                                {V}$ \textbf{linear functionals} on $V$ into...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:86: Undefined control sequence.
-<recently read> \dual 
-                      
-l.86 ...nite dimensional vector space, the  $\dual
-                                                  {V}$ is very big and
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:88: Undefined control sequence.
-<recently read> \dual 
-                      
-l.88 $\dual
-           {V}$ to find a restricted subspace. If $V$ is finite dimensional,...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:89: Undefined control sequence.
-<recently read> \dual 
-                      
-l.89 $\dual
-           {V}$ is finite and always defined.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+) (./Chapters/Chapter1/Section3/section3.tex [10]
 
 LaTeX Warning: Command \^ invalid in math mode on input line 93.
 
@@ -2215,15 +1721,6 @@ Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
-
-./Chapters/Chapter1/Section3/section3.tex:93: Undefined control sequence.
-l.93 ...ere is a linear functional  $\^v \in \dual
-                                                  {V}$ such that $\^v(v) \ne...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 Missing character: There is no è in font cmex10!
 
@@ -2269,15 +1766,6 @@ I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./Chapters/Chapter1/Section3/section3.tex:96: Undefined control sequence.
-l.96 ...e a bases of $V$ and let  $\^v_i \in \dual
-                                                  {V}$ be
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Missing character: There is no è in font cmex10!
 
 LaTeX Warning: Command \^ invalid in math mode on input line 97.
@@ -2389,17 +1877,6 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no è in font cmex10!
 Missing character: There is no è in font cmex10!
-./Chapters/Chapter1/Section3/section3.tex:100: Undefined control sequence.
-<recently read> \dual 
-                      
-l.100     $\dual
-                {V}$. Now if $v \neq 0 \in V$. by lemma \ref{1.2.7}, we get ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 LaTeX Warning: Command \^ invalid in math mode on input line 102.
 
@@ -2488,17 +1965,6 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no è in font cmex10!
 Missing character: There is no è in font cmex10!
-./Chapters/Chapter1/Section3/section3.tex:108: Undefined control sequence.
-<recently read> \dual 
-                      
-l.108 ...onals $\{\^v_1, \dots, \^v_n\}$ of $\dual
-                                                  {V}$ such
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 LaTeX Warning: Command \^ invalid in math mode on input line 109.
 
@@ -2543,82 +2009,6 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no è in font cmex10!
-./Chapters/Chapter1/Section3/section3.tex:113: Undefined control sequence.
-l.113 ...imensional vector space, and $T \in \dual
-                                                  {V}$ such that
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:115: Undefined control sequence.
-<recently read> \dual 
-                      
-l.115 ...defines an isomorphism of $V$ onto $\dual
-                                                   (\dual{V})$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:115: Undefined control sequence.
-l.115 ... an isomorphism of $V$ onto $\dual (\dual
-                                                  {V})$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:118: Undefined control sequence.
-l.118     Let $ v_0 \in V$. Let $T \in \dual
-                                            {V}$ be a linear functional such...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:119: Undefined control sequence.
-<recently read> \dual 
-                      
-l.119 ...0)$ defines a linear functional of $\dual
-                                                  {V}$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:120: Undefined control sequence.
-l.120     into $F$. Let $T_{v_0}:\dual
-                                      {V} \rightarrow F$ be defined by
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:121: Undefined control sequence.
-l.121 ...$T_{v_0}(T)=T(v_0)$, for any $T \in \dual
-                                                  {V}$. Notice that for  $T,...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:122: Undefined control sequence.
-l.122     \dual
-               {V}$ and $\alpha,\beta \in F$, we have  $T_ v_0(\alpha T+\beta
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 ./Chapters/Chapter1/Section3/section3.tex:122: Double subscript.
 l.122 ...and $\alpha,\beta \in F$, we have  $T_ v_
                                                   0(\alpha T+\beta
@@ -2639,107 +2029,7 @@ l.124     $T_v_
                0 \in \dual(\dual{V})$.
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./Chapters/Chapter1/Section3/section3.tex:124: Undefined control sequence.
-l.124     $T_v_0 \in \dual
-                          (\dual{V})$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:124: Undefined control sequence.
-l.124     $T_v_0 \in \dual(\dual
-                                {V})$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:127: Undefined control sequence.
-l.127     \dual
-               (\dual{V})$. Now define $\psi:V \rightarrow \dual(\dual{V})$ ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:127: Undefined control sequence.
-l.127     \dual(\dual
-                     {V})$. Now define $\psi:V \rightarrow \dual(\dual{V})$ ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:127: Undefined control sequence.
-l.127 ...})$. Now define $\psi:V \rightarrow \dual
-                                                  (\dual{V})$ by $\psi:v
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:127: Undefined control sequence.
-l.127 ...ow define $\psi:V \rightarrow \dual(\dual
-                                                  {V})$ by $\psi:v
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:130: Undefined control sequence.
-<recently read> \dual 
-                      
-l.130 ...si$ is a homomorphism of  $V$ onto $\dual
-                                                  (\dual{V})$; $\psi$ is onto
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:130: Undefined control sequence.
-l.130 ... a homomorphism of  $V$ onto $\dual(\dual
-                                                  {V})$; $\psi$ is onto
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:134: Undefined control sequence.
-l.134     all $T \in \dual
-                          {V}$. However, by lemma \ref{1.3.3}, there must be...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:135: Undefined control sequence.
-l.135     \dual
-               {V}$ for which $T(v) \neq 0$ when $v \neq 0$. Therefore, if  ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:142: Undefined control sequence.
-l.142 ...ilator} of $W$ to be  $A(W)=\{T \in \dual
-                                                  {V}: T(v)=0\}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+[11]
 ./Chapters/Chapter1/Section3/section3.tex:146: Missing number, treated as zero.
 <to be read again> 
                    \c@* 
@@ -2749,7 +2039,6 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-[11]
 
 LaTeX Warning: Command \~ invalid in math mode on input line 165.
 
@@ -2770,15 +2059,6 @@ Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
-
-./Chapters/Chapter1/Section3/section3.tex:165: Undefined control sequence.
-l.165 Let $\~T \in \dual
-                        {W}$ such that $\~T(w)=T(w)$ for any $w \in W$; wher...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 Missing character: There is no ç in font cmex10!
 
@@ -2803,33 +2083,6 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no ç in font cmex10!
-./Chapters/Chapter1/Section3/section3.tex:166: Undefined control sequence.
-l.166 \dual
-           {V}$. Now define the map $\psi:\dual{V} \rightarrow \dual{W}$ by ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:166: Undefined control sequence.
-l.166 \dual{V}$. Now define the map $\psi:\dual
-                                               {V} \rightarrow \dual{W}$ by ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:166: Undefined control sequence.
-l.166 ... the map $\psi:\dual{V} \rightarrow \dual
-                                                  {W}$ by $\psi:T
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 LaTeX Warning: Command \~ invalid in math mode on input line 167.
 
@@ -2852,60 +2105,6 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no ç in font cmex10!
-./Chapters/Chapter1/Section3/section3.tex:171: Undefined control sequence.
-l.171     $A(S) \subseteq A(\Span
-                                 {S})$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:174: Undefined control sequence.
-l.174     Since $S \subseteq \Span
-                                  {S}$, it is clear that $A(S) \subseteq A(\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:174: Undefined control sequence.
-l.174 ... it is clear that $A(S) \subseteq A(\Span
-                                                  {S})$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:175: Undefined control sequence.
-l.175     Now let $v \in \Span
-                              {S}$. Then $v=\lambda_1v_1+\dots+\lambda_nv_n$...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:176: Undefined control sequence.
-l.176     v_1, \dots, v_n \in S$.  Let $\psi:\dual
-                                                  {V} \rightarrow \dual{S}$ ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:176: Undefined control sequence.
-l.176 ...S$.  Let $\psi:\dual{V} \rightarrow \dual
-                                                  {S}$ by $T
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 LaTeX Warning: Command \~ invalid in math mode on input line 177.
 
@@ -2950,53 +2149,6 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no ç in font cmex10!
-./Chapters/Chapter1/Section3/section3.tex:180: Undefined control sequence.
-l.180 ...$ hence $v \in A(S)$; which puts $A(\Span
-                                                  {S})
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:186: Undefined control sequence.
-<recently read> \dual 
-                      
-l.186     subspace of  $V$, then  $\dual
-                                        {W} \simeq \dual{V}/A(W)$, and
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:186: Undefined control sequence.
-l.186 ...ace of  $V$, then  $\dual{W} \simeq \dual
-                                                  {V}/A(W)$, and
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:190: Undefined control sequence.
-l.190     Consider again the map $\psi:\dual
-                                            {V} \rightarrow \dual{W}$ by $T
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:190: Undefined control sequence.
-l.190 ... the map $\psi:\dual{V} \rightarrow \dual
-                                                  {W}$ by $T
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 LaTeX Warning: Command \~ invalid in math mode on input line 191.
 
@@ -3041,134 +2193,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no ç in font cmex10!
-./Chapters/Chapter1/Section3/section3.tex:194: Undefined control sequence.
-l.194     Let $h \in \dual
-                          {W}$. By lemma \ref{1.2.7}, if $\{w_1, \dots, w_m\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:198: Undefined control sequence.
-l.198     \dual
-               {W}$, let $f \in \dual{V}$ be defined by $f(v)=w$ where $v=w+...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:198: Undefined control sequence.
-l.198     \dual{W}$, let $f \in \dual
-                                     {V}$ be defined by $f(v)=w$ where $v=w+...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:199: Undefined control sequence.
-l.199 ... By definition, we have that $f \in \dual
-                                                  {V}$ and $~f=h$. So
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:201: Undefined control sequence.
-<recently read> \dual 
-                      
-l.201 ... theorem for vector spaces, we get $\dual
-                                                  {W} \simeq
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:202: Undefined control sequence.
-l.202     \dual
-               {V}/A(W)$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:205: Undefined control sequence.
-l.205     $\dim{\dual
-                     {W}}=\dim{\dual{V}/A(W)}=\dim{\dual{V}}-\dim{A(W)}$, an...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:205: Undefined control sequence.
-l.205     $\dim{\dual{W}}=\dim{\dual
-                                    {V}/A(W)}=\dim{\dual{V}}-\dim{A(W)}$, an...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:205: Undefined control sequence.
-l.205 ...{\dual{W}}=\dim{\dual{V}/A(W)}=\dim{\dual
-                                                  {V}}-\dim{A(W)}$, and since
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:206: Undefined control sequence.
-l.206     $\dim{\dual
-                     {V}}=\dim{V}$ and $\dim{\dual{W}}=\dim{W}$; we get
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:206: Undefined control sequence.
-l.206     $\dim{\dual{V}}=\dim{V}$ and $\dim{\dual
-                                                  {W}}=\dim{W}$; we get
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:213: Undefined control sequence.
-l.213     Notice that $A(A(W)) \subseteq \dual
-                                              (\dual{V})$. Clearly, $W \subs...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:213: Undefined control sequence.
-l.213 ...otice that $A(A(W)) \subseteq \dual(\dual
-                                                  {V})$. Clearly, $W \subseteq
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapters/Chapter1/Section3/section3.tex:216: Undefined control sequence.
-l.216     $\dim{A(A(W))}=\dim{\dual
-                                   {V}}-\dim{A(W)}=\dim{V}-(\dim{V}-\dim{W})...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+[12]
 
 ./Chapters/Chapter1/Section3/section3.tex:228: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
@@ -3182,7 +2207,6 @@ l.228             \end{align*}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[12]
 
 LaTeX Warning: Command \^ invalid in math mode on input line 238.
 
@@ -3227,15 +2251,6 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no è in font cmex10!
 Missing character: There is no è in font cmex10!
-./Chapters/Chapter1/Section3/section3.tex:239: Undefined control sequence.
-l.239     \dual
-               {F^n}$ has the form $T=x_1\^v_1+\dots+x_n\^v_n$, with $x_i \i...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 LaTeX Warning: Command \^ invalid in math mode on input line 239.
 
@@ -3400,26 +2415,60 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[13])) [14] (./ringTheory.aux)
+[13]
+./Chapters/Chapter1/Section4/section4.tex:132: Undefined control sequence.
+<argument> \alpha a+\bea 
+                         b, w
+l.132      $\vbrack{\alpha a+\bea b, w}
+                                       =\alpha\vbrack{a,w}+\beta\vbrack{b,w}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[14]
+Overfull \hbox (8.66792pt too wide) in paragraph at lines 171--174
+[]$\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 u; v[]\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 w \OMS/cmsy/m/n/12 ^^@ h\OML/cmm/m/it/12 w; v[]\OMS/cmsy/m/n/12 i\OML/cmm/m/it/12 v[] \OMS/cmsy/m/n/12 ^^@ [] h\OML/cmm/m/it/12 w; v[]\OMS/cmsy/m/n/12 i\OML/cmm/m/it/12 v[]; v[]\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 w; v[]\OMS/cmsy/m/n/12 i ^^@ h\OML/cmm/m/it/12 w; v[]\OMS/cmsy/m/n/12 ih\OML/cmm/m/it/12 v[]; v[]\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 + [] + \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 w; v[]\OMS/cmsy/m/n/12 ih\OML/cmm/m/it/12 v[]; v[]\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 =
+ []
+
+[15]
+./Chapters/Chapter1/Section4/section4.tex:235: Missing $ inserted.
+<inserted text> 
+                $
+l.235 ...brack{v,w_1}+\dots+\vbrack{v,w_r}w_r$ \in
+                                                   W+W^\perp. Since $W \cap
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapters/Chapter1/Section4/section4.tex:235: Missing $ inserted.
+<inserted text> 
+                $
+l.235 ...k{v,w_r}w_r$ \in W+W^\perp. Since $W \cap
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+) (./Chapters/Chapter1/Section5/section5.tex)) [16] (./ringTheory.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ringTheory.out' has not changed.
-(rerunfilecheck)             Checksum: A0ED6ECE0B5A5BB599784E46118BAD33;332.
+(rerunfilecheck)             Checksum: D650C7582A0D6A61071925E324DF3127;386.
  ) 
 Here is how much of TeX's memory you used:
- 29389 strings out of 481176
- 705727 string characters out of 5914226
- 1112729 words of memory out of 5000000
- 45721 multiletter control sequences out of 15000+600000
+ 29413 strings out of 481176
+ 706101 string characters out of 5914226
+ 1112003 words of memory out of 5000000
+ 45727 multiletter control sequences out of 15000+600000
  413191 words of font info for 64 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  102i,8n,103p,736b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ringTheory.pdf (16 pages, 216927 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ringTheory.pdf (18 pages, 249285 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 85 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
