@@ -7,7 +7,7 @@
 
 \begin{definition}
     Let $R$ be a ring. We say a nonempty set $M$ is a \textbf{left module} over $R$  (or a
-    \textbf{left $R$-module}) if there are operations $+:M \times M \rightarrow M$ and $\cdot:\R
+    \textbf{left $R$-module}) if there are operations $+:M \times M \rightarrow M$ and $\cdot:R
     \times M \rightarrow M$ such that $(M,+)$ is an abelian group, and for any $r,s \in R$ and $a,b
     \in M$:
         \begin{enumerate}
@@ -144,7 +144,7 @@ following theorems only for left $R$-modules.
     the corollary to the fundamental theorem,  $G=G_1 \times \dots \times G_k$, where $G_i$ is a
     cyclic group of order  $\ord{G_i}=p^{n_i}$, where $n_k \leq \dots \leq n_1 \leq n_1$. Then
         \begin{equation*}
-            \odr{G_1 \times G_2}=\frac{\org{G_1}\ord{G_2}}{\org{(G_1 \cap G_2)}}.
+            \odr{G_1 \times G_2}=\frac{\ord{G_1}\ord{G_2}}{\ord{(G_1 \cap G_2)}}.
         \end{equation*}
         Since $G_1 \times G_2$ is a direct product, $\ord{(G_1 \cap G_1)}=(e)$, so $\ord{G_1 \times
         G_2}=\ord{G_1}\ord{G_2}=p^{n_1}p^{n_2}=p^{n_1+n_2}$. Continuing this way we get
@@ -163,3 +163,93 @@ following theorems only for left $R$-modules.
     The number of non-isomorphic finite abelian groups of order $p_1^{n_1} \dots p_k^{n_k}$ for
     $p_i$ distinct primes is  $p(n_1) \dots p(n_k)$.
 \end{corollary}
+
+We now observe $R$-modules in the context of homomorphisms.
+
+\begin{definition}
+    Let $R$ be a ring, and let  $M$ and  $N$ be  left $R$-modules. We define a map  $T:M \rightarrow
+    N$to be a \textbf{left $R$-homomorphism} if
+        \begin{enumerate}
+            \item[(1)] $(m_1+m_2)T=m_1T+m_2T$.
+
+            \item[(2)] $(rm_1)T=r(m_1)T$.
+        \end{enumerate}
+    We define the \textbf{kernel} of $T$ to be  $\ker{T}=\{x \in M: xT=0\}$. We define the
+    \textbf{image} of $T$ to be  $\im{T}=\{xT: x \in M\}$.
+\end{definition}
+
+Here we mean $xT$ to be  $T(x)$ to reduce notational encumberance. In the case of composition of
+$R$-homomorphisms, we mean  $TS$  $S \circ T$.
+
+\begin{example}
+    Let $T:M \rightarrow N$ and $S:N \rightarrow Q$ be left $R$-homomorphisms. Define  $TS:M
+    \rightarrow Q$ by $xTS=(xT)S$. Then for $r, s \in R$ and  $m_1, m_2 \in M$, we have that
+    $(rm_1+sm_2)TS=r((m_1T)S)+s((m_2T)S)$. Which makes $TS$ into an $R$-homomorphism. It is easy to
+    see then that  $\ker{TS}=\{xT:xTS=0\}$.
+\end{example} 
+
+\begin{lemma}\label{1.5.3}
+    Let $M$ and  $N$ be left  $R$-modules, and let  $T:M \rightarrow N$ be a left $R$-homomorphism.
+    Then  $\ker{T}$ and $\im{T}$ are submodules of $M$ and  $N$ respectively.
+\end{lemma}
+\begin{proof}
+    Since $T$ is a  $R$-homomorphism, it is a group homomorphism; hence  $\ker{T} \leq M$/ Now
+    letting $r \in R$ and  $x \in \ker{T}$, $(rx)T=r(xT)=r0=0$, putting $rx \in \ker{T}$. 
+    Similarly, by the bilinearity of $T$,  $\im{T} \leq N$ and $xT \in \im{T}$. since $rx \in M$,  
+    and $r(xT)=(rx)T$, we get that $r(xT) \in \im{T}$.
+\end{proof}
+
+\begin{lemma}\label{1.5.4}
+    Let $T$ be an $R$-homomorphism. Then  $T$ is  $1-1$ if and only if  $\ker{T}=0$.
+\end{lemma}
+\begin{proof}
+    Suppose that $T$ is  $1-1$. Then  $xT=yT$ implies  $x=y$, this makes  $\ord{(\ker{T})}=1$, hence
+    $\ker{T}=0$. Now suppose that $ker{T}=0$, and let $xT=yT$. Then  $xT-yT=(x-y)T=0$, so $x-y \in
+    \ker{T}$. This makes $x-y=0$, hence  $x=y$ which makes  $T$  $1-1$.
+\end{proof}
+
+\begin{definition}
+    Let $M$ and  $N$ be  $R$-modules. We say that an  $R$-homomorphism  $T:M \rightarrow N$ is an
+    \textbf{$R$-isomorphism} if $T$ is  $1-1$ from  $M$ onto  $N$. In this case, we say that  $M$
+    and  $N$ are  \textbf{$R$-isomorphic}, and write $M \simeq_R N$.
+\end{definition}
+
+We would also like to define what a ``left quotient module'' much in the same manner we described
+the left quotient module'' of a ring $R$ by a left ideal  $(\lambda)$. Our motivation is the fact
+that if $M$ is a left $R$-module, and  $A \subseteq M$ is a submodule, then since  $(r,a) \in R
+\times A$ implies $ra \in A$, this makes  $A$ into a left ideal of  $R$. So already we have that
+$R/A$ is a left quotient module of  $R$ by  $A$.
+
+We would like to take this same quotient, restricting $R$ to  $M$. Define the operations  $+:M/A
+\times M/A \rightarrow M/A$ by $(a+A)+(b+A)=(a+b)+A$ and $\cdot:R \times M/A \rightarrow M/A$ by
+$r(a+A)=ra+A$. Like in the case of quotient modules by ideals, these operations are well defined,
+and make $(M/A,+)$ into a group; moreover they satisfy the rest of the axioms for modules. Thus we
+then have the following definition.
+
+\begin{definition}
+    Let $M$ be a left $R$-module and  $A \subseteq M$ a submodule. Define the operations  $+$ and
+    $\cdot$ by  $(a+A)+(b+A)=(a+b)+A$ and $r(a+A)=ra+A$, respectively. We call the module $M/A$ the
+     \textbf{left quotient module} of $M$ by  $A$.
+\end{definition}
+
+\begin{lemma}\label{1.5.5.}
+    Let $M$ be an a left $R$-module, and let $A \subseteq M$ be a submodule. Then there exists a
+    left  $R$-homomorphism from  $M$ onto  $M/A$.
+\end{lemma}
+\begin{proof}
+    Take the map $m \rightarrow m+A$ which defines a left $R$- homomorphism for
+    $(rm+sn)+A=r(m+A)+s(n+A)$; this map is also onto by definition.
+\end{proof}
+
+\begin{theorem}\label{1.5.6}
+    Let $M$ and  $N$ be  $R$-modules. If $T:M \rightarrow N$ is an $R$-homomorphism from  
+    $M$ onto  $T$, then $N \simeq_R M$.
+\end{theorem}
+\begin{proof}
+    By the fundamental theorem for group homomorphisms, we have that as groups, $N \simeq
+    M/\ker{T}$. By the aximos of modules, this makes $N \simeq_R M/\ker{T}$.
+\end{proof}
+
+\begin{definition}
+    We call an $R$-module  $M$  \textbf{irreducible} if its only submodules are $0$ and  $M$.
+\end{definition}

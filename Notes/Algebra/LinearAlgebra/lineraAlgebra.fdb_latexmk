@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1624979187 "lineraAlgebra.tex" "lineraAlgebra.pdf" "lineraAlgebra" 1624979187
+["pdflatex"] 1625101785 "lineraAlgebra.tex" "lineraAlgebra.pdf" "lineraAlgebra" 1625101785
   "/etc/texmf/web2c/texmf.cnf" 1623103737 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -219,15 +219,15 @@
   "Chapters/Chapter1/Section2/section2.tex" 1624921659 15389 c371bcc7a31c5913632627adad21e5ea ""
   "Chapters/Chapter1/Section3/section3.tex" 1624921659 12636 daadf902bef37b0e86d9f888633364e1 ""
   "Chapters/Chapter1/Section4/section4.tex" 1624972121 12362 2b1aa3be34370c40692873ec4ec5be55 ""
-  "Chapters/Chapter1/Section5/section5.tex" 1624979186 9408 d250eb63867dd3051b2393dca6dd6676 ""
+  "Chapters/Chapter1/Section5/section5.tex" 1625101780 13775 53566f1c32b17b5e4f3a419db74112cf ""
   "Chapters/Chapter1/chapter1.tex" 1624972195 660 b54fe1713d1ea57159887ae4503620eb ""
   "Library/Fonts/BlackboardBold.tex" 1624923091 799 1b9ffd870853a2ba5a8572cba56ceb1b ""
   "Library/Fonts/MathCalligraphy.tex" 1624921659 791 fe7a518c060a9035d50e4618c12ce65f ""
-  "lineraAlgebra.aux" 1624979152 3746 88836be75d54b408fa8f2e5d5a698d8d "pdflatex"
-  "lineraAlgebra.out" 1624979152 386 d650c7582a0d6a61071925e324df3127 "pdflatex"
+  "lineraAlgebra.aux" 1625101690 3943 39d82c0a51db84daf430ac66e49537f1 "pdflatex"
+  "lineraAlgebra.out" 1625101690 386 d650c7582a0d6a61071925e324df3127 "pdflatex"
   "lineraAlgebra.tex" 1624972420 2203 aeddcc0f10e7ab041af19284449a22af ""
   (generated)
-  "lineraAlgebra.aux"
-  "lineraAlgebra.out"
   "lineraAlgebra.pdf"
+  "lineraAlgebra.aux"
   "lineraAlgebra.log"
+  "lineraAlgebra.out"
