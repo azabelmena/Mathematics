@@ -1,0 +1,84 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Definitions and Examples}
+\label{section1}
+
+\begin{definition}
+    Let $R$ be a ring. We say a nonempty set $M$ is a \textbf{left module} over $R$  (or a
+    \textbf{left $R$-module}) if there are operations $+:M \times M \rightarrow M$ and $\cdot:R
+    \times M \rightarrow M$ such that $(M,+)$ is an abelian group, and for any $r,s \in R$ and $a,b
+    \in M$:
+        \begin{enumerate}
+            \item[(1)] $r(a+b)=ra+rb$.
+
+            \item[(2)] $r(sa)=(rs)a$.
+
+            \item[(3)] $(r+s)a=ra+sa$.
+        \end{enumerate}
+        Similarly, we call $M$ a \textbf{right module} (or \textbf{right $R$-module}) over $R$ if
+        $(a+b)r=ar+br$, $(as)r=a(sr)$, and $a(r+s)=ar+as$.
+    We call $M$  \textbf{unital} if $R$ ha a unit element, and  $1m=m$ for all  $m \in M$.
+\end{definition}
+
+We focus on left modules.
+
+\begin{example}
+    \begin{enumerate}
+        \item[(1)] All vector spaces are unital left modules over any field $F$.		
+
+        \item[(2)] Let $G$ be a group together with an arbitrary operation  $+$ and define an action
+            $\cdot:\Z \times G \rightarrow G$ by $(n,a) \rightarrow na \in G$. Then the properties
+            of exponents in groups gives $r(a+b)=ra+rb$, $r(sa)=(rs)a$, and $(r+s)a=ra+sa$. This
+            makes every group a left $\Z$-module.
+
+        \item[(3)] Let $R$ be a ring, and let  $M$ be a left ideal of  $R$. Take  $r,m \rightarrow
+            rm$. Since $M$ is an ideal,  $rm \in M$, and by the multiplicative associative, and
+            distributive laws, $M$ is a left $R$-module.
+
+        \item[(4)] Any ring $R$ is a left  (and right) module over itself.
+
+        \item[(5)] Let $R$ be a ring, and  $(\lambda)$ a left ideal of $R$. Consider the quotient
+            ring  $R/(\lambda)$. define $+$ by  $(a+\lambda)+(b+\lambda)=(a+b)+\lambda$ and
+            $r(a+\lambda)=ra+\lambda$. Clearly these operations are well defined, and
+            $(R/(\lambda),+)$ forms a group; moreover,
+            $(a+\lambda)+(b+\lambda)=(a+b)+\lambda=(b+\lambda)+(a+\lambda)$, so $R/(\lambda)$ is
+            abelian under $+$. Now notice that
+            $r(a+b+\lambda)=r(a+b)+\lambda=ra+rb+\lambda=(ra+\lamda)+(rb+\almbda)=r(a+\lambda)+r(b+\lambda)$,
+            $r(sa+\lambda)=rsa+\lambda=rs(a+\lambda)$, and
+            $(r+s)(a+\lambda)=(r+s)a+\lambda=ra+rs+\lambda=r(a+\lambda)+s(a+\lambda)$. This makes
+            $R/(\lambda)$ a left $R$-module. We call this module the  \textbf{left quotient module}
+            of $R$ by  $(\lambda)$.
+    \end{enumerate}
+\end{example} 
+
+\begin{definition}
+    Let $M$ be an  $R$-module  (left or right) and $A \subseteq M$, we call  $A$ a
+    \textbf{submodule} of $M$ is  $A \leq M$ and whenever  $r \in R$ and  $a \in A$,  $ra \in A$, or
+    $ar \in A$.
+\end{definition}
+
+\begin{definition}
+    If $M$ is an  $R$-module with a collection of submodules $\{M_i\}_{i=1}^s$. We call $M$ the
+    \textbf{direct sum} of $\{M_i\}$ if for every $m \in M$, there are uniquely determined  $m_i \in
+    M_i$ for  $1 \leq i \leq s$, such that  $m=m_1+\dots+m_s$. We write $M=M_1 \oplus \dots \oplus
+    M_s$, or $M=\bigoplus_{i=1}^s{M_i}$.
+\end{definition}
+
+\begin{definition}
+    An $R$-module is \textbf{cyclic} if there exists $m_0 \in M$ such that $m=rm_0$ (or $m=m_0r$)
+    for all $m \in M$ and some  $r \in R$.
+\end{definition}
+
+\begin{definition}
+    We say an $R$-module is  \textbf{finitely generated} if there exists $a_1,\dots ,a_n \in M$ such
+    that for every $m \in M$,  $m=r_1a_1+\dotsr_na_n$ (or $m=a_1r_1+\dots+a_nr_n$) for $r_1, \dots,
+    r_n \in R$. We call $\{a_i\}_{i=1}^n$ the \textbf{generating set}; and we call it a
+    \textbf{minimal generating set} if $\com{\{a_i\}}{a_j}$ does not generate $M$, for  $1 \leq i,j
+    \leq n$. We call the size of a minimal generatng set the  \textbf{rank} of $M$ and denote it
+    $\rank{M}$.
+\end{definition}
+
+Most of the definitions are stated for both left and right $R$-modules. However, we consider the
+following theorems only for left $R$-modules.

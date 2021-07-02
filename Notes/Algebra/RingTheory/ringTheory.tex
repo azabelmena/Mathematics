@@ -1,0 +1,80 @@
+\documentclass[12pt, twoside]{book}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage{pgfplots}
+    \pgfplotsset{compat=1.12,}
+\usepackage{amsmath,amsfonts,amsthm,amssymb,graphicx,mathtools,hyperref}
+\usepackage[italicdiff]{physics}
+\usepackage{tikz, tikz-cd}
+\usepackage{graphicx}
+%\usepackage[backend = biber]{biblatex}
+%\addbibresource{references.bib}
+%\nocite{*}
+\renewcommand\qedsymbol{$\blacksquare$}
+\renewcommand{\bar}[1]{\overline{#1}}
+\usetikzlibrary{positioning}
+\input{Library/Fonts/BlackboardBold.tex}
+\input{Library/Fonts/MathCalligraphy.tex}
+\newcommand{\ita}[1]{\textit{#1}}
+\newcommand{\com}[2]{#1 \backslash #2}
+\newcommand{\oneton}{\{1,2,3,...,n\}}
+\newcommand\idea[1]{\begin{gather*}#1\end{gather*}}
+\newcommand\ef{\ita{f} }
+\newcommand\eff{\ita{f}}
+\newcommand\proofs[1]{\begin{proof}#1\end{proof}}
+\newcommand\inv[1]{#1^{-1}}
+\newcommand\setb[1]{\{#1\}}
+\newcommand\en{\ita{n }}
+\newcommand{\vbrack}[1]{\langle #1\rangle}
+\renewcommand{\bbar}[1]{\underline{#1}}
+\renewcommand{\bar}[1]{\overline{#1}}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\dual}{dual}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{postulate}{Postulate}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{plain} % just in case the style had changed
+\newcommand{\thistheoremname}{}
+\newtheorem*{genericthm}{\thistheoremname}
+\newenvironment{namedtheorem}[1]
+  {\renewcommand{\thistheoremname}{#1}%
+   \begin{genericthm}}
+  {\end{genericthm}}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}[chapter]
+\newtheorem*{HW}{Homework}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{note}{Note}
+
+\renewcommand*{\proofname}{Proof}
+
+\title{Linear ALgebra.}
+\author{Alec Zabel-Mena}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{Chapters/Chapter1/chapter1.tex}
+
+%\printbibliography
+
+\end{document}

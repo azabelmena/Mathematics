@@ -1,0 +1,245 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Inner Product Spaces.}
+\label{section1}
+
+\begin{definition}
+    We define a vector space $V$ over $\C$ to be an  \textbf{inner product space} if there
+    exists a binary operation $\vbrack{,}:V \times V \rightarrow \C $ such that for all  $v,u,w \in V$
+    and  $\alpha, beta \in \C$:
+        \begin{enumerate}
+            \item[(1)] $\vbrack{u,v}=\bar{\vbrack{v,u}}$.
+
+            \item[(2)] $\vbrack{u,u} \geq 0$ and $\vbrack{u,u} = 0$ if and only if  $u=0$.
+
+            \item[(3)] $\vbrack{\alpha u+\beta v, w}=\alpha\vbrack{u,w}+\beta\vbrack{v,w}$.
+
+        \end{enumerate}
+\end{definition}
+
+\begin{example}
+    \begin{enumerate}		
+        \item[(1)] In $\C^n$, let $u=(\alpha_1, \dots, \alpha_n)$ and $v=(\beta_1, \dots, \beta_n)$ and
+            define $\vbrack{u,v}=\sum_{i=1}^n{\alpha_i\bar{\beta_i}}$. Notice that 
+            $\sum{\alpha_i\bar{\beta_i}}=\sum_{i=1}^n{\bar{\beta_i}\alpha_i}=\bar{\sum{\bar{\alpha_i}\beta_i}}$;
+            so $\vbrack{u,v}=\bar{\vbrack{v,u}}$. We also have that $\vbrack{u,u} \geq 0$ and is
+            $0$ only when  $u=0$. Moreover, if  $w=(\gamma_1, \dots, \gamma_i)$ and
+            $\alpha,\beta \in \C$, then  $\vbrack{\alpha u+\beta
+            v,w}=\sum{(\alpha\alpha_i+\beta\beta_i)\bar{\gamma_i}}=\alpha\sum{\alpha_i}\bar{\gamma_i}+
+            \beta\sum{\beta_i}\bar{\gamma_i}=\alpha\vbrack{u,w}+\beta\vbrack{v,w}$. So
+            $\vbrack{,}$ defines an inner product over $\C^n$.
+
+        \item[(2)] Let $\C^{[0,1]}$ be the set of all complex valued functions continous on the
+            domain $[0,1]$. If $f,g \in \C^{[0,1]}$, define
+            $\vbrack{f,g}=\int_{0}^1{f(t)\bar{g(t)}}\dd{t}$. Then $\vbrack{,}$ defines an inner
+            product over $\C^{[0,1]}$. Let $f,g,h \in \C^{[0,1]}$ and $\alpha,\beta \in \C$. We have
+            then that
+            $\vbrack{f,g}=\int{f\bar{g}}=\int{\bar{\bar{f}g}}=\bar{\int{\bar{f}g}}=\bar{\vbrack{g,f}}$.
+        Moreover, $\int_{0}^1{f\bar{f}}\dd{t} \geq 0$; now  $\vbrack{f,f}=0$ if $f=0$. Now if
+            $\int{f\bar{f} \dd{t}=0}$, letting  $f(t)=x(t)+iy(t)$, by the product of conjugates, and
+            the sum rule, $x(t)=y(t)=0$, i.e. $f=0$. Again, by the rules of complex integras,
+            $\vbrack{\alpha f+\beta g,h}=\int{(\alpha f+\beta
+            g)\bar{h}}=\alpha\int{f\bar{h}}+\beta\int{g\barh{h}}$.
+    \end{enumerate}
+\end{example} 
+
+\begin{definition}
+    Let $V$ be an inner product space over  $\C$. The  \textbf{norm} of $v \in V$ is the map
+    $\|\cdot\|:V \rightarrow \R$ by  $\|v\|=\sqrt{\vbrack{v,v}}$.
+\end{definition}
+
+\begin{lemma}\label{1.4.1}
+    If $V$ is an inner product space, with  $u,v \in V$ and  $\alpha,\beta \in \C$, then
+    $\vbrack{\alpha u+\beta v, \alpha u+\beta
+    v}=\alpha\bar{\alpha}\vbrack{u,u}+\alpha\bar{\beta}\vbrack{u,v}+\bar{\alpha}\beta\vbrack{v,u}+\beta\bar{\beta}\vbrack{v,v}$.
+\end{lemma}
+\begin{proof}
+    Take $(3)$ on the inner product $\vbrack{\alpha u+\beta v, \alpha u+\beta v}$ to get: 
+    $\vbrack{\alpha u+\beta v, \alpha u+\beta v}=\alpha\vbrack{u,\alpha u+\beta v}+\beta\vbrack{v,
+    \alpha u+\beta v}=\alpha\bar{\vbrack{\alpha u+\beta v,u}}+\beta\bar{\vbrack{\alpha u+\beta
+v,v}}=\alpha\bar{\alpha}\vbrack{u,u}+\alpha\bar{\beta}\vbrack{u,v}+\bar{\alpha}\beta\vbrack{v,u}+\beta\bar{\beta}\vbrack{v,v}$.
+\end{proof}
+\begin{corollary}
+    $\|\alpha u\|=|\alpha|\|u\|.$
+\end{corollary}
+\begin{proof}
+    We have $||\alpha u||^2=\vbrack{\alpha u, \alpha u}=\alpha\bar{\alpha}\vbrack{u,u}$. Since
+    $\alpha\bar{\alpha}=|\alpha|^2$ we have $||\alpha u||=|\alpha|^2||u||^2$ which gives us the
+    result.
+\end{proof}
+
+\begin{lemma}\label{1.4.2}
+    If $a,b \in \R$ such that $a>0$ and  $a\lambda^2+2b\lambda+c \geq 0$ for all  $\lambda \in \R$,
+    then  $b^2 \leq ac$.
+\end{lemma}
+\begin{proof}
+    We complete the squares. $a\lambda^2+2b\lambda+c=\frac{1}{a}(a\lambda+b)^2+(c-\frac{b^2}{a})
+    \geq 0$. Choosing $\lambda=-\frac{b}{a}$, we get $c-\frac{b^2}{a} \geq 0$.
+\end{proof}
+
+\begin{theorem}[The Cauchy-Schwarz Inequality]\label{1.4.3}
+    If $V$ is an inner product space over  $\C$ with $u,v \in V$, then  $|\vbrack{u,v}| \leq
+    \|u\|\|v\|$.
+\end{theorem}
+\begin{proof}
+    If $\vbrack{u,v} \in V=\R$, and $u \neq 0$, then for any  $\lambda \in \R$,
+    $\vbrack{u\lambda+v,u\lambda+v}=\lambda^2\vbrack{u,u,}+2\lambda\vbrack{u,v}+\vbrack{v,v} \geq
+    0$. Letting $a=\vbrack{u,u}$, $b=\vbrack{u,v}$ and $c=\vbrack{v,v}$ we get
+    $a\lambda^2+2b\lambda+c \geq 0$. By the above lemma, then  $b^2 \leq ac$; i.e.
+    $|\vbrack{u,v}|^2 \leq ||u||^2||v||^2$.
+
+    Now take $\alpha=\vbrack{u,u} \in V \neq \R$. Then $\alpha \neq 0$. Now we observe that
+    $\vbrack{\frac{u}{\alpha},v}=\frac{1}{\alpha}\vbrack{u,v}=\frac{1}{\vbrack{u,v}}\vbrack{u,v}=1$;
+    so $\vbrack{\frac{u}{\alpha},v} \in \R$. Then by above, we have $1=|\vbrack{\frac{u}{\alpha},v}|
+    \leq ||\frac{u}{\alpha}||||v||=\frac{1}{|\alpha|}||u||||v||$, that is $1 \leq
+    \frac{\|u\|\|v\|}{|\alpha|}$; giving the desired result.
+\end{proof}
+
+\begin{example}
+    \begin{enumerate}
+        \item[(1)] Let $V=\C^n$ and  $\vbrack{u,v}=\sum_{i=1}^n{\alpha_i,\bar{\beta_i}}$ with
+            $u=(\alpha_1, \dots, \alpha_n)$ and $v=(\beta_1, \dots, \beta_n)$. Then we have
+            $|\sum{\alpha_i\bar{\beta_i}}| \leq \sum{|\alpha_i|^2}\sum{|\beta_i|^2}$.		
+
+        \item[(2)] If $V=\C^{[0,1]}$ with $\vbrack{f,g}=\int_{0}^1{f(t)\bar{g(t)}} \dd{t}$, then we
+            have $|\int_{0}^1{f\bar{g}}| \leq \int_{0}^1{|f|^2}\int_{0}^1{|g|^2}$.
+    \end{enumerate}
+\end{example} 
+
+\begin{definition}
+    If $V$ is an inner product space, we say that $u, v \in V$ are \textbf{orthogonal} (or that $u$
+    is  \textbf{orthogonal} to $v$) if $\vbrack{u,v}=0$.
+\end{definition}
+
+\begin{example}
+    If $u$ is orthogonal to  $v$, thejn  $\vbrack{u,v}=\bar{\vbrack{v,u}}=\bar{0}=0$, making $v$
+    orthogonal to $u$.
+\end{example} 
+
+\begin{definition}
+    If $V$ is an inner product space, and  $W \subseteq V$ is a subsapce of  $V$ we call the
+    \textbf{orthogonal complement} of $W$ the space  $W^\perp=\{x \in V: \vbrack{x,w}=0 \text{, for
+    all } w \in W\}$.
+\end{definition}
+
+\begin{lemma}\label{1.4.4}
+    $W^\perp$ is a subspace of  $V$.
+\end{lemma}
+\begin{proof}
+    Clearly $W^\perp \subseteq V$. Moreover, let $a,b \in W^\perp$ and  $\alpha,\beta \in \C$, then
+     $\vbrack{\alpha a+\bea b, w}=\alpha\vbrack{a,w}+\beta\vbrack{b,w}=0$, so $\alpha a+\beta b \in
+     W^\perp$.
+\end{proof}
+
+\begin{example}
+    Note that $W \cap W^\perp=\{x \in V: \vbrack{x,w}=0\}$. If $w \in W^\perp$, then $\vbrack{w,w}=0$
+    making $w=0$, hence  $W \cap W^\perp=0$.
+\end{example} 
+
+\begin{definition}
+    We call a set of vectors $\{v_i\}_{i \in \Z^+}$ of an inner product space $V$
+    \textbf{orthonormal} if:
+        \begin{enumerate}
+            \item[(1)] $\vbrack{v_i,v_i}=1$.
+
+            \item[(2)] $\vbrack{v_i,v_j}=0$ whenever $i \neq j$.
+        \end{enumerate}
+\end{definition}
+
+\begin{lemma}\label{1.4.5}
+    If $\{v_i\}$ are a set of orthonormal vectors of $V$, then  $\{v_i\}$ is also linearly
+    independent. Moreover, if $\{v_i\}$ is finite and $w=\alpha_1v_1+\dots+\alpha_nv_n$, then $\alpha_i=\vbrack{w,v_i}$ for
+    each $1 \leq i \leq n.$
+\end{lemma}
+\begin{proof}
+    Supposse that $\alpha_1v_1+\dots+\alpha_nv_n+\dots=0$, then
+    $\vbrack{\alpha_1v_1+\dots+\alpha_nv_n+\dots,
+    v_i}=\alpha_1\vbrack{v_1,v_i}+\dots+\alpha_n\vbrack{v_n,v_i}+\dots=0$. Since $\{v_i\}$ is
+    orthonormall, we get that $\alpha_i=0$ for each  $i$, implying linear independence. Now if
+    $\{v_i\}_{i=1}^n$ is finite, letting $w=\alpha_1v_1+\dots+\alpha_nv_n$ ; by above we get that
+    $\vbrack{w,v_i}=\alpha_i$ by orthonormality.
+\end{proof}
+
+\begin{lemma}\label{1.4.6}
+    If $\{v_1, \dots, v_n\}$ are orthonormal in $V$, and  $w \in V$, then
+    $u=w-\vbrack{w,v_1}v_1-\dots-\vbrack{w,v_n}v_n$ is orthogonal to each $v_i$ for  $1 \leq i \leq
+    n$.
+\end{lemma}
+\begin{proof}
+    $\vbrack{u,v_i}=\vbrack{w-\vbrack{w,v_1}v_1-\dots\vbrack{w,v_n}v_n,
+    v_i}=\vbrack{w,v_i}-\vbrack{w,v_i}\vbrack{v_1,v_i}+\dots+\vbrack{w,v_n}\vbrack{v_n,v_i}=0$,
+    making $u$ orthogonal to  $v_i$.
+\end{proof}
+
+\begin{theorem}[The Gram-Schmidt Orthogonalization Theorem]\label{1.4.7}
+    Let $V$ be a finite dimensional inner product space. Then  $V$ has an orthonormal set as a
+    basis.
+\end{theorem}
+\begin{proof}
+    Let $\dim{V}=n$ and let $\{v_1, \dots, v_n\}$ be a basis of $V$. Take  $w_1 ,\dots, w_n$ as
+    follows: $v_1|w_1$, $w_2 \in \Span\{w_1,v_2\}$ and $w_3 \in \Span\{w_1,w_2,v_3\}$; in general
+    take $w_i \in \Span\{w_1, \dots, w_{i-1},v_i\}$. Let $v_1=\|v_1\|w_1$, then
+    $\vbrack{w_1,w_1}=\vbrack{\frac{v_1}{\|v_1\|},\frac{v_1}{\|v_1\|}}=\frac{1}{\|v_1\|^2}\vbrack{v_1,v_1}=1$
+    ; hence $\|w_1\|=1$. Now consider $\vbrack{\alpha w_1+v_2,w_1}=0$. Then
+    $\alpha\vbrack{w_1,w_1}+\vbrack{v_2,w_1}=0$; since $\|w_1\|=1$, then $\alpha=-\vbrack{v_2,w_1}$.
+    Now let $u_2=-\vbrack{v_2,w_1}w_1+v_2$. $u_2$ is orthogonal to $w_1$ by lemma \ref{1.4.6} and
+    since $v_1$ and $v_2$ are linearly independent, so must $w_1$ and $v_2$. So $u_2 \neq 0$. Now
+    let $\|u_2\|w_2=u_2$. We have then by above that, $\{w_1,w_2\}$ is orthonormal. Continuing
+    along, suppose then that $\{w_1, \dots, w_i\}$ are orthonormal, where $\|u_i\|w_i=u_i$, and 
+    where $u_i=-\vbrack{v_i,w_1}-\dots-\vbrack{v_i,w_{i-1}}w_i+v_i$. Take
+    $u_{i+1}=-\vbrack{v_{i+1},w_1}-\dots-\vbrack{v_{i+1},w_i}+v_{i+1}$. By the above and lemma
+    \ref{1.4.5}, $w_1 ,\dots, w_i,v_{i+1}$ are linearly independent, so $u_{i+1} \neq 0$. 
+    Putting $\|u_{i+1}\|w_i=u_i$, clearly $\vbrack{w_{i+1},w_{i+1}}=1$. We also have, by the
+    construction, that $\vbrack{u_{i+1},w_1}=\dots=\vbrack{u_{i+1},w_i}=0$. So $w_1, \dots w_n$ are
+    orthonormal.
+
+    Constructin $\{w_1, \dots, w_n\}$ from the basis $\{v_1, \dots, v_n\}$ this way gives an
+    orthonormal set of $n$ linearly independent vectors; i.e. a basis.
+\end{proof}
+
+\begin{corollary}[Bessel's Inequality]
+    For all $v \in V$:
+        \begin{equation}
+            \sum_{i=1}^m{|\vbrack{w_i,v}|^2} \leq \|v\|^2.
+        \end{equation} 
+\end{corollary}
+
+\begin{example}
+    Let $V=\R_3[x]$ be the real field of all polynomials of $\deg<3$. Define for
+    $p(x),q(x) \in \R_3[x]$
+        \begin{equation*}
+            \vbrack{p,q}=\int_{-1}^1{p(x)q(x)} \dd{x}.
+        \end{equation*}
+    Now consider the basis $\{1,x,x^2\}$ of $\R_3[x]$. Take
+    $w_1=\frac{1}{\|1\|}=\frac{1}{\sqrt{\int_{1}^1 \dd{x}}}=\frac{1}{\sqrt{2}}$. Take
+    $u_2=-\vbrack{x,w_1}w_1+x=-\frac{\vbrack{x,w_1}}{\sqrt{2}}+x=x \neq 0$. Now take
+    $w_2=\frac{u_2}{\|u_2\|}=\frac{x}{\sqrt{\int_{-1}^1}{x^2} \dd{x}}=\frac{\sqrt{3}}{2}x$. Taking
+    $u_3=-\vbrack{x^2,w_1}w_1-\vbrack{x^2,w_2}w_2+x^2=-\frac{1}{3}+x^2 \neq 0$; so taking
+    $\frac{u_2}{\|u_3\|}=\frac{-\frac{1}{3}+x^2}{\sqrt{\int_{-1}^1{(-\frac{1}{3}+x^2})
+    \dd{x}}}=\frac{\sqrt{10}}{4}(-1+3x^2)$, we get the orthonormal basis
+    $\{x,-\frac{1}{3}+x^2,\frac{\sqrt{10}}{4}(-1+3x^2)\}$.
+\end{example} 
+
+\begin{theorem}\label{1.4.8}
+    If $V$ is a finite dimensional inner product space, and if  $W \subseteq V$ is a subspace of
+    $V$, then  $V=W \oplus W^\perp$.
+\end{theorem}
+\begin{proof}
+    Since $W \subseteq V$ is a subsapace of  $V$,  $W$ inherits the inner product of  $V$ (restrict
+    $\vbrack{,}$ to $W \times W$); similarly, $W^\perp$ also inherits the inner product. By the
+    Gram-Schmidt orthogonaliztion theorem, there is an orthonormal set of vectors $\{w_1, \dots,
+    w_r\}$ which is a basis of $W$. Now if  $v \in V$, by lemma \ref {1.4.6} take
+    $v_0=v-\vbrack{v,w_1}-\dots-\vbrack{v,w_r}w_r$ and $\vbrack{v_0,w_i}=0$ for each $1 \leq i \leq
+    r$. Then  $v=v_0+\vbrack{v,w_1}+\dots+\vbrack{v,w_r}w_r$ \in W+W^\perp. Since $W \cap
+    W^\perp=0$, we get  $V=W \oplus W^\perp$.
+\end{proof}
+\begin{corollary}
+    $(W^\perp)^\perp=W$.
+\end{corollary}
+\begin{proof}
+    If $w \in W$, then for any  $u \in W$,  $\vbrack{u,w}=0$, hence $W \subseteq (W^\perp)^\perp$.
+    Now $V=W^\perp \oplus (W^\perp)^\perp$ and we have $\dim{W}=\dim{(W^\perp)^\perp}$, which gives
+    us $W=(W^\perp)^\perp$.
+\end{proof}

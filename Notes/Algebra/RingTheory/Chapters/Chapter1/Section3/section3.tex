@@ -1,0 +1,253 @@
+%----------------------------------------------------------------------------------------
+%	SECTION 1.1
+%----------------------------------------------------------------------------------------
+
+\section{Dual Spaces.}
+\label{section1}
+
+\begin{lemma}\label{1.3.1}
+    Let $V$ and  $W$ be vector spaces over a field  $F$. Then  $\hom(V,W)$ is a
+    vector space over $F$.
+\end{lemma}
+\begin{proof}
+    First, let $T,L \in \hom(V,W)$, and $\alpha, \beta \in F$. Then  $T+L(\alpha
+    v+ \beta u)=\alpha T(v)+\beta T(u)+\alpha L(v)+\beta
+    L(u)=\alpha(T+L)+\beta(T+L)$, so $T+L \in \hom(V,W)$. Since $+$ is just
+    function addition, it is associative. Likewise, the zero map  $0:V
+    \rightarrow W$ by $v \rightarrow 0$ and the map $-T:V \rightarrow W$ by $v
+    \rightarrow -v$ define the identity of $\hom(V,W)$ and the inverse of $T$
+    respectively. This makes  $(\hom(V,W),+)$ into a group. Now by the
+    properties of homomorphisms, we also see that $\alpha(T+L)=\alpha T+\alpha
+    L$, $(\alpha+\beta)T=\alpha T+\beta T$, $\alpha(\beta T)=(\alpha\beta)T$ and
+    $T(1v)=1T(v)$. This makes $\hom(V,W)$ a vector space.
+\end{proof}
+
+\begin{lemma}\label{1.3.2}
+    If $S,T \in \hom(V,W)$ such that $S(v_i)=T(v_i)$ for all $v_i$ in a basis
+    $\{v_1, \dots, v_n\}$ of $V$, then  $S=T$.
+\end{lemma}
+\begin{proof}
+    Since $\{v_1, \dots, v_n\}$ is a basis of $V$, we have for every  $v \in V$,
+     $v=\lambda_1v_1+\dots+\lambda_n+v_n$ for unique $\lambda_1, \dots,
+     \lambda_n \in F$. Then we get
+     $S(v)=\lambda_1S(v_1)+\dots+\lambda_n+S(v_n)=\lambda_1T(v_1)+\dots+\lambda_n+T(v_n)=T(v)$.
+     Thus $S(v)=T(v)$ for all $v \in V$.
+\end{proof}
+
+\begin{theorem}\label{1.3.3}
+    If $V$ and  $W$ are vector spaces with  $\dim{V}=m$ and $\dim{W}=n$, then
+    $\dim{\hom(V,W)}=mn$.
+\end{theorem}
+\begin{proof}
+    Let $\{v_1, \dots, v_m\}$ and $\{w_1, \dots, w_n\}$ be bases for $V$ and
+    $W$, respectively. Then for any  $v \in V$,
+    $v=\lambda_1v_1+\dots+\lambda_mv_m$ for unique $\lambda_1, \dots, \lambda_n
+    \in F$. Now let $T_{ij} \in \hom(V,W)$ be defined such that $T_{ij}(v_i)=0$
+    for $i \neq j$ and
+    $T_{ij}(v)=\lambda_iw_j$; for $1 \leq i \leq m$ and  $1 \leq j \leq n$. We
+    see there are $mn$ possible such  $T_{ij}$. Now let $S \in \hom(V,W)$, then
+    $S(v_i) \in W$, hence $S=\mu_{11}w_1+\dots+\mu_nw_{1n}$ for unique
+    $\mu_{11}, \dots, \mu_{1n} \in F$. Then
+    $S(v_i)=\mu_{i1}w_1+\dots+\mu_{in}w_n$ for unique $\mu_{i1}, \dots, \mu_{in}
+    \in F$. Now let
+    $S_0=\mu_{11}T_{11}+\dots+\mu_{1n}T_{1n}+\dots+\mu_{m1}T_{m1}+\dots+\mu_{mn}T_{mn}$.
+    Then
+    $S_0(v_k)=(\mu_{11}T_{11}+\dots+\mu_{1n}T_{1n}+\dots+\mu_{m1}T_{m1}+\dots+\mu_{mn}T_{mn})(v_k)=\mu_{11}T_{11}(v_k)+\dots+\mu_{1n}T_{1n}(v_k)+\dots+\mu_{m1}T_{m1}(v_k)+\dots+\mu_{mn}T_{mn}(v_k)$.
+    Since $T_{ij}(v_k)=0$ for $i \neq k$ we get  $
+    S_0(v_k)=\alpha_{k1}w_1+\dots+\alpha_{kn}wn$. So $ S_0(vk)=S(v_k)$ for the
+    basis $\{v_1, \dots, v_m\}$ of $V$; this makes  $ S_0=S$.
+
+    Now since $S=S_0$ is arbitrary, and subsequentially a linear combination of
+    the $T_{ij}$, we get that $\Span{\{T_{11}, \dots, T_{1n}, \dots, T_{m1},
+    \dots, T_{mn}\}}=\hom(V,W)$. Now suppose for $\beta_{11}, \dots,
+    \beta_{1n},\\
+    \dots, \beta_{m1}, \dots, \beta_{mn} \in F$ that
+    $\beta_{11}T_{11}+\dots+\beta_{1n}T_{1n}+\dots+\beta_{m1}T_{m1}+\dots+\beta_{mn}T_{mn}=0$.
+    Then we get that
+    $(\beta_{11}T_{11}+\dots+\beta_{1n}T_{1n}+\dots+\beta_{m1}T_{m1}+\dots+\beta_{mn}T_{mn})(v_k)=\beta_{k_1}w_1+\dots+\beta_{kn}w_n=0$.
+    Since $\{w_1, \dots, w_n\}$ is a basis of $W$, this makes  $\beta_{kj}=0$
+    for all $1 \leq n$. Thus  $\{T_{11}, \dots, T_{1n}, \dots, T_{m1},
+        \dots, T_{mn}$ linearly independent, and hence a basis of $\hom(V,W)$.
+        Therefore, $\dim{\hom(V,W)}=mn$.
+\end{proof}
+\begin{corollary}
+    $\dim{\hom(V,V)}=m^2$.
+\end{corollary}
+\begin{corollary}
+    $\dim{\hom(V,F)}=m$.
+\end{corollary}
+
+\begin{definition}
+    Let $V$ be a vector space over a field  $F$. We call the vector space
+    $\hom(V,F)$ the \textbf{dual space} of $V$ and denote it  $\dual{V}$. We
+    call elements of $\dual{V}$ \textbf{linear functionals} on $V$ into  $F$.
+\end{definition}
+
+If $V$ is an infinite dimensional vector space, the  $\dual{V}$ is very big and
+of no interest. In these cases, we use properties of other possible structures of
+$\dual{V}$ to find a restricted subspace. If $V$ is finite dimensional, then
+$\dual{V}$ is finite and always defined.
+
+\begin{lemma}\label{1.3.4}
+    If $V$ is a finite dimensional vector space, and  $v \neq 0 \in V$, then
+    there is a linear functional  $\^v \in \dual{V}$ such that $\^v(v) \neq 0$.
+\end{lemma}
+\begin{proof}
+    Let $\{v_1, \dots, v_n\}$ be a bases of $V$ and let  $\^v_i \in \dual{V}$ be
+    defined by $\^v_i(v_j)=0$ whenever $i \neq j$ and  $\^v_ i(v_j)=1$
+    otherwise. Then if $v=\lambda_1v_1+\dots+\lambda_nv_n$,
+    $\^v_i(v)=\lambda_i$. Then $\{\^v_i, \dots, \^v_n\}$ forms a basis of
+    $\dual{V}$. Now if $v \neq 0 \in V$. by lemma \ref{1.2.7}, we get a basis $
+    v_1=v,v_2, \dots, v_n$. Thence there is a linear functional
+    $\^v_1(v_1)=\^v_1(v)=1$.
+\end{proof}
+
+\begin{definition}
+    Let $V$ be a finite dimensional vector space with basis  $\{v_1, \dots,
+    v_n\}$. We define the \textbf{dual basis} of $\{v_1, \dots, v_n\}$ to be a
+    basis of linear functionals $\{\^v_1, \dots, \^v_n\}$ of $\dual{V}$ such
+    that $\^v_i(v_j)=0$ wheberver $i \neq j$ and  $\^v_i(v_i)=1$ otherwise.
+\end{definition}
+
+\begin{lemma}\label{1.3.4}
+    If $V$ is a finite dimensional vector space, and $T \in \dual{V}$ such that
+    $T(v)$ is fixed, then the map  $\psi:v \rightarrow T_v$, where $T_v(T)=T(v)$
+    defines an isomorphism of $V$ onto $\dual (\dual{V})$.
+\end{lemma}
+\begin{proof}
+    Let $ v_0 \in V$. Let $T \in \dual{V}$ be a linear functional such that
+    $T(v_0)$ is fixed. Then $T(v_0)$ defines a linear functional of $\dual{V}$
+    into $F$. Let $T_{v_0}:\dual{V} \rightarrow F$ be defined by
+    $T_{v_0}(T)=T(v_0)$, for any $T \in \dual{V}$. Notice that for  $T,L \in
+    \dual{V}$ and $\alpha,\beta \in F$, we have  $T_ v_0(\alpha T+\beta
+    L)=\alpha T(v_0)+\beta L(v_0)=\alpha T_v_0(T)+\beta T_v_0(L)$, which makes
+    $T_v_0 \in \dual(\dual{V})$.
+
+    Now given any $v \in V$, we can associate it with a  $T_v \in
+    \dual(\dual{V})$. Now define $\psi:V \rightarrow \dual(\dual{V})$ by $\psi:v
+    \rightarrow T_v$. Then for $v,w \in V$ and  $\alpha,\beta \in F$ we have
+    $T_{\alpha v+\beta w}(T)=\alpha T( v)+\beta T(w)=\alpha T_v(T)+\beta T_w(T)$,
+    so $\psi$ is a homomorphism of  $V$ onto $\dual(\dual{V})$; $\psi$ is onto
+    by definition.
+
+    Now let  $v \in \ker{\psi}$. So $\psi(v)=0$; that means $t_v(T)=T(v)=0$ for
+    all $T \in \dual{V}$. However, by lemma \ref{1.3.3}, there must be a $T \in
+    \dual{V}$ for which $T(v) \neq 0$ when $v \neq 0$. Therefore, if  $v \in
+    \ker{T}$, it must be that $v=0$, that is $\ker{T}=(0)$. Thus $\psi$ is
+    $1-1$, which makes it an isomorphism.
+\end{proof}
+
+\begin{definition}
+    Let $W$ be a subspace of a vector space  $V$. We denote the
+    \textbf{annihilator} of $W$ to be  $A(W)=\{T \in \dual{V}: T(v)=0\}$.
+\end{definition}
+
+\begin{example}
+    \begin{enumerate}[label=(\arabic*)]
+        \item Let $ W_1, W_2 \subseteq V$ be subspaces of a finite dimensional
+            vector space. Let $T \in A(W_1+W_2)$. Then $T(w)=0$ for $w \in
+            W_1+W_2$, hence $w=w_1+w_2$ where $w_i \in W_i$ for  $1 \leq i \leq
+            2$. So we get  $T(w_1)+T(w_2)=0$ which makes either both
+            $T(w_1),T(w_2)$ $0$ or inverses of each other. IN either case,
+            $T(w_1)+T(w_2) \in A(W_1)+A(W_2)$ or $T(w_1)+T(w_2) \in A(W_1) \cap
+            A(W_2) \subseteq A(W_1)+A(W_2)$. So $A(W_1+W_2) \subseteq
+            A(W_1)+A(W_2)$. On the other hand we have $A(W_1),A(W_2) \subseteq
+            A(W_1+W_2)$, hence $A(W_1)+A(W_2) \subseteq A(W_1+W_2)$. Hence we
+            have $A(W_1+W_2)=A(W_1)+A(W_2)$.
+
+        \item Similarly, if $T \in A(W_1 \cap W_2)$, then $T(w)=0$ for $w \in
+            W_1 \cap W_2$, making $T(w) \in A(W_1) \cap A(W_2)$. By similar
+            reasoning to before, we also get that $A(W_1) \cap A(W_2) \subseteq
+            A(W_1 \cap W_2)$. So we get $A(W_1 \cap W_2)=A(W_1) \cap A(W_2)$
+    \end{enumerate}
+\end{example} 
+
+Let $\~T \in \dual{W}$ such that $\~T(w)=T(w)$ for any $w \in W$; where  $T \in
+\dual{V}$. Now define the map $\psi:\dual{V} \rightarrow \dual{W}$ by $\psi:T
+\rightarrow \~T$. Then we see that $A(W)=\ker{\psi}$, which makes it a subspace.
+
+\begin{lemma}\label{1.3.6}
+    If $S \subseteq V$ is a subset of a finite dimensional vector space, then
+    $A(S) \subseteq A(\Span{S})$.
+\end{lemma}
+\begin{proof}
+    Since $S \subseteq \Span{S}$, it is clear that $A(S) \subseteq A(\Span{S})$.
+    Now let $v \in \Span{S}$. Then $v=\lambda_1v_1+\dots+\lambda_nv_n$ where $
+    v_1, \dots, v_n \in S$.  Let $\psi:\dual{V} \rightarrow \dual{S}$ by $T
+    \rightarrow \~T$ where $\~T(s)=T(s)$ for all $s \in S$. Then
+    $\psi(v)=\lambda_1\psi(v_1)+\dots+\lambda_n\psi(v_n)=\psi(v)=\lambda_1T(v_1)+\dots+\lambda_nT(v_n)$.
+    Since $\ker{\psi}=A(S)$, and $T(v_i)=0$ for all $v_i \in S$ for  $1 \leq i
+    \leq n$, we get  $\psi(v)=0$ hence $v \in A(S)$; which puts $A(\Span{S})
+    \subseteq A(S)$.
+\end{proof}
+
+\begin{theorem}[The Second Homomorphism Theorem for Vector Spaces]\label{1.3.7}
+    If $V$ is a finite dimensional  vector space, and $W \subseteq V$ is a
+    subspace of  $V$, then  $\dual{W} \simeq \dual{V}/A(W)$, and
+    $\dim{A(W)}=\dim{V}-\dim{W}$.
+\end{theorem}
+\begin{proof}
+    Consider again the map $\psi:\dual{V} \rightarrow \dual{W}$ by $T
+    \rightarrow \~T$, where $\~T(w)=T(w)$ for all $w \in W$; and recalling above
+    that  $A(W)=\ker{T}$.
+
+    Let $h \in \dual{W}$. By lemma \ref{1.2.7}, if $\{w_1, \dots, w_m\}$ is a
+    basis of $W$, then there is a basis  $\{w_1, \dots, w_m,v_1, \dots, v_r\}$;
+    hence $\dim{V}=r+m$. Let  $W_1$ be a subspace of  $V$ such that
+    $Span{\{v_1, \dots, v_r\}}=W_1$. Then $V=W \oplus W_1$. Now if $h \in
+    \dual{W}$, let $f \in \dual{V}$ be defined by $f(v)=w$ where $v=w+w_1 \in W
+    \oplus W_1$. By definition, we have that $f \in \dual{V}$ and $~f=h$. So
+    $\psi(f)=h$ making $\psi$ onto. Since $A(W)=\ker{\psi}$, by the first
+    homomorphism theorem for vector spaces, we get $\dual{W} \simeq
+    \dual{V}/A(W)$.
+
+    Moreover, we get
+    $\dim{\dual{W}}=\dim{\dual{V}/A(W)}=\dim{\dual{V}}-\dim{A(W)}$, and since
+    $\dim{\dual{V}}=\dim{V}$ and $\dim{\dual{W}}=\dim{W}$; we get
+    $\dim{A(W)}=\dim{V}-\dim{W}$.
+\end{proof}
+\begin{corollary}
+    $A(A(W))=W$.
+\end{corollary}
+\begin{proof}
+    Notice that $A(A(W)) \subseteq \dual(\dual{V})$. Clearly, $W \subseteq
+    A(A(W))$, for if $\psi(w)=T_w$ by $T_w(f)=f(w)$ and $T_w=0$ for all  $f \in
+    A(W)$. Now by above we get
+    $\dim{A(A(W))}=\dim{\dual{V}}-\dim{A(W)}=\dim{V}-(\dim{V}-\dim{W})=\dim{W}$.
+    This makes $W \simeq A(A(W))$; and since $W \subseteq A(A(W))$, we get
+    $W=A(A(W))$.
+\end{proof}
+
+\begin{theorem}\label{1.3.8}
+    The system of homogeneous linear equations:
+        \begin{equation}\label{eq_1.1}
+            \begin{align*}
+                a_{11}x_1+\dots+a_{1n}x_n &= 0 \\
+                        \vdots      &    \\
+                a_{m1}x_1+\dots+a_{mn}x_n &= 0 \\
+            \end{align*}
+        \end{equation}   
+    where $ a_{ij} \in F$ is of rank $r$, then there are  $n-r$ linearly
+    independent solutions in  $F^n$.
+\end{theorem}
+\begin{proof}
+    Consider the system described by equation \ref{eq_1.1}, with $a_{ij} \in F$
+    for $1 \leq i \leq m$ and  $1 \leq j \leq n$. Let  $U$ be a subspace of $m$
+    vectors generated by $\{(a_{11}, \dots, a_{1n}), \dots, (a_{m1}, \dots,
+    a_{mn})\}$. Consider the basis $\{(1,0,\dots, 0), \dots, (0,0,\dots, 1)\}$
+    of $F^n$ and let  $\{\^v_1, \dots, \^v_n\}$ be its dual basis. Then $T \in
+    \dual{F^n}$ has the form $T=x_1\^v_1+\dots+x_n\^v_n$, with $x_i \in F$. for
+    $1 \leq i \leq n$.
+
+    Now for  $(a_{11}, \dots, a_{1n}) \in U$, $T(a_{11}, \dots,
+    a_{1n})=(x_1\^v_1+\dots+x_n\^v_n)(a_{11}, \dots,
+    a_{1n})=a_{11}x_1+\dots+a_{1n}x_n$, since $\^v_i(v_j)=0$ for $i \neq j$.
+    Conversely, every solution  $(x_1, \dots, x_n)$ gives an element of the form
+    $x_1\^v_1+\dots+x_n\^v_n$ in $A(U)$. Therefore, the number of linearly
+    independent solutions of equation \ref{eq_1.1} is
+    $\dim{A(U)}=\dim{V}-\dim{U}=n-r$.
+\end{proof}
+\begin{corollary}
+    If $n>m$, then there is a solution  $(x_1, \dots, x_n)$ where not all $x_i$
+    is  $0$.
+\end{corollary}
